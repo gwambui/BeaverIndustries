@@ -1,5 +1,5 @@
 <?php
 ?>
 
-    <h2>Site Under Construction</h2>
+    <h2> Site Under Construction</h2>
 
