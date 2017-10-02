@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="f04d649f-585b-4a5d-b954-674a80d74307" name="beaver" url="http://beaverindustries.co.ke">
+        <fileTransfer host="beaverindustries.co.ke" port="21" password="dfd3df9ddfe7dfe9dfcbdfdfdf9edf9bdfc2df9c" username="beaveri1">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
