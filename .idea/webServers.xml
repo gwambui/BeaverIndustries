@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="f04d649f-585b-4a5d-b954-674a80d74307" name="beaver" url="http://beaverindustries.co.k/beaver">
-        <fileTransfer host="beaverindustries.co.ke" port="21" rootFolder="/beaver" username="beaveri1" password="dfd3df9ddfe7dfe9dfcbdfdfdf9edf9bdfc2df9c">
+        <fileTransfer host="beaverindustries.co.ke" port="21" username="beaveri1" password="dfd3df9ddfe7dfe9dfcbdfdfdf9edf9bdfc2df9c">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
