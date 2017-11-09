@@ -32,6 +32,7 @@ include ("shared/navmenu.php")
             <div class="6u-first">
 
                 <!-- Banner Copy -->
+                <p>upload test</p>>
                 <p>With comfort and style in every design, our furniture transforms every room.
                     We guarantee superior workmanship and exemplary service right to your door... </p>
                 <a href="#" class="button-big">Learn more</a>
