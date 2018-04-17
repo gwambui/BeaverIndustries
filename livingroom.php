@@ -12,7 +12,7 @@ include("shared/header.php");
 <?php
 include ("shared/navmenu.php");
 
-$NavSelection = "Dining";
+$NavSelection = "Livingroom";
 $obj = $pba->GetMainProduct($NavSelection);
 ?>
 
@@ -45,7 +45,7 @@ $obj = $pba->GetMainProduct($NavSelection);
                 <!-- Box #2 -->
                 <section>
                     <header>
-                        <h2>Dining Room Furniture</h2>
+                        <h2>Livingroom Furniture</h2>
                         <h3>Beaver values Customer Satisfaction</h3>
                     </header>
                     <?php

@@ -1,6 +1,7 @@
 <?php
 
 require_once 'DA/BaseDA.php';
+require_once 'DA/ProductDA.php';
 
 require_once 'MySqlPDO/MySqlPDO.php';
 require_once 'DbSettings.php';

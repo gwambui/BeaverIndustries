@@ -1,35 +1,40 @@
-<div id="header-wrapper">
+
+<?php
+
+require_once 'BAL/BA.php';
+$pba = new ProductBA();
+$mainselect = null;
+$subselect = null;
+//$data = $pba->GetProduct($mainselect, $subselect);
+$fmt = new NumberFormatter( 'en_KE', NumberFormatter::CURRENCY );
+?>
+<div id="header-wrapper" >
+
     <header id="header" class="5grid">
-        <div class="12u-first">
+        <div id = "contact"><a href="contact.php">Contact Us</a></div>
+        <div>
 
-            <!-- Logo --><div><img src="assets/img/beaver-logo.svg" width = "80px" height = "80 px" alt="BI logo" /> </div>
-            <h1><a href="//index.php">Beaver Industries</a></h1>
+            <!-- Logo --><div><img src="assets/Images/beaver-logo.svg" width = "80px" height = "80 px" alt="BI logo" /> </div>
+            <h1><a href="index.php">Beaver Industries</a></h1>
+        </div>
+        <form id="nav" action ="<?echo $_SERVER[$mainselect.'php'];?>" method='post'>
 
-            <!-- Nav -->
-            <nav >
+            <nav>
 
-                <a href="index.php"><span>Homepage</span></a><!---->
-                <a id = "navbdr" onmouseover="showmenu('navbdr')"   href=#>Bedroom</a>
-                <a id = "navdin" onmouseover="showmenu('navdin')" href=#>Dining</a>
-                <a href="homedecor.php">Home Decor</a>
-                <a href="gallery.php">Gallery</a>
-                <a href="contact.php">ContactUs</a>
+                <a id = "navLivingroom" name = "#navLivingroom"  href="livingroom.php">Livingroom</a>
+                <a id = "navDining" name = '#navDining' href="dining.php">Dining</a>
+                <a id = "navBedroom" name ="#navBedroom"  href="bedroom.php">Bedroom</a>
+                <a id = "navBaby" name ='#navBaby'   href="baby.php">Baby</a>
+                <a id = "navKids" name = '#navKids'  href="kids.php">Kids</a>
+                <a id = "navOutdoor" name ="#navOutdoor"   href="outdoor.php">Outdoor</a>
+                <a id = "navHome" name = "#navHome"   href="home.php">Home</a>
 
-                <div id = "hoverbox" onmouseover="showmenu()" onmouseout="hidemenu()">
-                     <ul id = "listing">
-                         <!--<li>Beds</li>
-                           <li>Aemoires</li>
-                           <li>Shoe Racks</li>
-                           <li>Storage</li>
-                           <li>Mirrors</li>  -->
-                     </ul>
 
-                </div>
             </nav>
 
-        </div>
-
-
+        </form>
 
     </header>
+    <div  id = "hoverbox">
 
+    </div>

@@ -32,7 +32,7 @@ include ("shared/navmenu.php")
             <div class="6u-first">
 
                 <!-- Banner Copy -->
-                <p>upload test</p>>
+
                 <p>With comfort and style in every design, our furniture transforms every room.
                     We guarantee superior workmanship and exemplary service right to your door... </p>
                 <a href="#" class="button-big">Learn more</a>
@@ -41,7 +41,7 @@ include ("shared/navmenu.php")
             <div class="6u">
 
                 <!-- Banner Image -->
-                <a href="#" class="bordered-feature-image"><img src="assets/img/work_detail.jpg" alt="" /></a>
+                <a href="#" class="bordered-feature-image"><img src="assets/Images/BedsCribsDeckers/Bby1000.jpg" alt="" /></a>
 
             </div>
             <div class="5grid-clear"></div>
@@ -57,7 +57,7 @@ include ("shared/navmenu.php")
 
                 <!-- Feature #1 -->
                 <section>
-                    <a href="#" class="bordered-feature-image"><img src="assets/img/whitecot1.png" alt="white baby cot" /></a>
+                    <a href="#" class="bordered-feature-image"><img src="assets/Images/BedsCribsDeckers/Bby1001.jpg" alt="white baby cot" /></a>
                     <h2>Welcome to Beaver Industries</h2>
                     <p>
                         Your home for custom furniture, Bring your ideas
@@ -74,7 +74,7 @@ include ("shared/navmenu.php")
 
                 <!-- Feature #2 -->
                 <section>
-                    <a href="#" class="bordered-feature-image"><img src="assets/img/king bed black.png" alt="" /></a>
+                    <a href="#" class="bordered-feature-image"><img src="assets/Images/BedsCribsDeckers/Castle1016.jpg" alt="" /></a>
                     <h2>Your dream bed?</h2>
                     <p>
                         A great day starts with a good night sleep. A solid and beautiful
@@ -88,7 +88,7 @@ include ("shared/navmenu.php")
 
                 <!-- Feature #3 -->
                 <section>
-                    <a href="#" class="bordered-feature-image"><img src="assets/img/diningset1.png" alt="" /></a>
+                    <a href="#" class="bordered-feature-image"><img src="assets/Images/DiningSets/Bachelor1119.jpg" alt="" /></a>
                     <h2>Dining King</h2>
                     <p>
                         Be crowned the top host or hostess with your classic elegant
@@ -102,7 +102,7 @@ include ("shared/navmenu.php")
 
                 <!-- Feature #4 -->
                 <section>
-                    <a href="#" class="bordered-feature-image"><img src="assets/img/lock1.png" alt="Door lock" /></a>
+                    <a href="#" class="bordered-feature-image"><img src="assets/Images/Locks/Lamu1136.jpg" alt="Door lock" /></a>
                     <h2>All things fixtures</h2>
                     <p>
                         You can count on the Beaver Industries experts to know the right
@@ -127,7 +127,7 @@ include ("shared/navmenu.php")
                         <h2>Who We Are</h2>
                         <h3>The Beaver Family</h3>
                     </header>
-                    <a href="#" class="feature-image"><img src="assets/img/headerbi.png" alt="Beaver Industries Staff" /></a>
+                    <a href="#" class="feature-image"><img src="assets/Images/HeaderBi.png" alt="Beaver Industries Staff" /></a>
                     <p>
                         Beaver has been in the timber and furniture business since 2008 and home deco and fixtures since 1980.
                         Beaver boasts a wealth of experts in perfecting the look of the home.
@@ -160,13 +160,17 @@ include ("shared/navmenu.php")
             </div>
             <div class="4u">
 
-                <!-- Box #3 -->
+                <!-- Box #3-->
                 <section>
                     <header>
                         <h2>Our customer corner</h2>
                         <h3>Drop us a line on facebook</h3>
                     </header>
-                    <div class="fb-page" data-href="https://www.facebook.com/BeavertimberCo/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BeavertimberCo/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BeavertimberCo/">Beaver Timber</a></blockquote></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/BeavertimberCo/"
+                         data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
+                         data-hide-cover="false" data-show-facepile="true"><blockquote
+                                cite="https://www.facebook.com/BeavertimberCo/" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/BeavertimberCo/">Beaver Timber</a></blockquote></div>
 
                 </section>
 

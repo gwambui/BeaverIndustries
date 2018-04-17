@@ -135,6 +135,7 @@
          * @param array     $pdoOptions     PDO Driver options, if required
          */
 
+        //public function Connect($database = DB_NAME, $user = DB_USER, $password = DB_PASSWORD, $host = DB_URL , $port = 3306, $pdoOptions = array())
         public function Connect($database = '', $user = 'root', $password = '', $host = 'localhost', $port = 3306, $pdoOptions = array())
         {
             if ( !is_array($pdoOptions) ) {

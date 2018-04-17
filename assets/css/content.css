@@ -1,0 +1,39 @@
+#content-wrapper #content .sidebar
+{
+    width:20%;
+    left:0;
+
+
+
+}
+#content-wrapper #content .main{
+
+    width:75%;
+    right:0;
+}
+.itemDisplay img{
+    max-width: 100%; /**/
+    overflow: hidden;
+    height:130px;
+    display: block;
+    margin: auto auto;
+}
+.itemDisplay div{
+
+    margin:0 30px 0 0;
+    border: 1px solid #96a9b5;
+    width:90%;
+}
+
+.itemDisplay p
+{
+    line-height: 16px;
+    font-size: 14px;
+
+
+}
+.itemDisplay p span
+{
+
+    font-weight: bold;
+}
