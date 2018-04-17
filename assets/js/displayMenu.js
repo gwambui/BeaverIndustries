@@ -70,10 +70,10 @@ $(function ()
 
         $("#hoverbox").html(
 
-            "<a href =index.php>" + "Seating" + "</a><br>"+
-            "<a href =index.php>" + "Coffee tables" + "</a><br>"+
-            "<a href =index.php>" + "Book shelves" + "</a><br>"+
-            "<a href =index.php>" + "Tv stands" + "</a>");
+            "<a href =livingroom_seating.php>" + "Seating" + "</a><br>"+
+            "<a href =livingroom_coffeetables.php>" + "Coffee tables" + "</a><br>"+
+            "<a href =livingroom_bookshelves.php>" + "Book shelves" + "</a><br>"+
+            "<a href =livingroom_tvstands.php>" + "Tv stands" + "</a>");
 
         navdrop.showHoverBox(opt);
     });
@@ -85,12 +85,12 @@ $(function ()
 
         $("#hoverbox").html(
 
-            "<a href =index.php>" + "Dining sets" + "</a><br>"+
-            "<a href =index.php>" + "Dining tables" + "</a><br>"+
-            "<a href =index.php>" + "Dining chairs" + "</a><br>"+
-            "<a href =index.php>" + "Credenza" + "</a><br>"+
-            "<a href =index.php>" + "Stools" + "</a><br>"+
-            "<a href =index.php>" + "Benches" + "</a>");
+            "<a href =dining_sets.php>" + "Dining sets" + "</a><br>"+
+            "<a href =dining_tables.php>" + "Dining tables" + "</a><br>"+
+            "<a href =dining_chairs.php>" + "Dining chairs" + "</a><br>"+
+            "<a href =dining_credenza.php>" + "Credenza" + "</a><br>"+
+            "<a href =dining_stools.php>" + "Stools" + "</a><br>"+
+            "<a href =dining_benches.php>" + "Benches" + "</a>");
 
         navdrop.showHoverBox(opt);
     });
@@ -101,13 +101,10 @@ $(function ()
 
         $("#hoverbox").html(
 
-            "<a href =index.php>" + "Beds" + "</a><br>"+
-            "<a href =index.php>" + "Chaise" + "</a><br>"+
-            "<a href =index.php>" + "Vanity" + "</a><br>"+
-            "<a href =index.php>" + "Drawers" + "</a><br>"+
-            "<a href =index.php>" + "Dressers" + "</a><br>"+
-            "<a href =index.php>" + "Armoires" + "</a><br>"+
-            "<a href =index.php>" + "Wardrobes" + "</a>");
+            "<a href =bedroom_beds.php>" + "Beds" + "</a><br>"+
+            "<a href =bedroom_chaise.php>" + "Chaise" + "</a><br>"+
+            "<a href =bedroom_vanity.php>" + "Vanity" + "</a><br>"+
+            "<a href =Storage.php>" + "Storage" + "</a>");
 
 
        navdrop.showHoverBox(opt);
@@ -119,10 +116,9 @@ $(function ()
 
         $("#hoverbox").html(
 
-            "<a href =index.php>" + "Cribs" + "</a><br>"+
-            "<a href =index.php>" + "Crib sets" + "</a><br>"+
-            "<a href =index.php>" + "Rockers" + "</a><br>"+
-            "<a href =index.php>" + "Transition beds" + "</a>");
+            "<a href =baby_cribs.php>" + "Cribs" + "</a><br>"+
+            "<a href =baby_cribsets.php>" + "Crib sets" + "</a><br>"+
+            "<a href =baby_rockers.php>" + "Rockers" + "</a>");
 
         navdrop.showHoverBox(opt);
     });
@@ -133,9 +129,9 @@ $(function ()
 
         $("#hoverbox").html(
 
-            "<a href =index.php>" + "Beds" + "</a><br>"+
-            "<a href =index.php>" + "Book shelves" + "</a><br>"+
-            "<a href =index.php>" + "Shoe racks" + "</a>");
+            "<a href =kids_beds.php>" + "Beds" + "</a><br>"+
+            "<a href =kids_bookshelves.php>" + "Book shelves" + "</a><br>"+
+            "<a href =kids_shoeracks.php>" + "Shoe racks" + "</a>");
 
         navdrop.showHoverBox(opt);
     });
@@ -146,8 +142,8 @@ $(function ()
 
         $("#hoverbox").html(
 
-            "<a href =index.php>" + "Day beds" + "</a><br>"+
-            "<a href =index.php>" + "Deck sofas" + "</a>");
+            "<a href =outdoor_daybeds.php>" + "Day beds" + "</a><br>"+
+            "<a href =outdoor_decksofas.php>" + "Deck sofas" + "</a>");
 
         navdrop.showHoverBox(opt);
     });
@@ -157,11 +153,11 @@ $(function ()
 
         $("#hoverbox").html(
 
-            "<a href =index.php>" + "Wood doors" + "</a><br>"+
-            "<a href =index.php>" + "Door locks" + "</a><br>"+
-            "<a href =index.php>" + "Coat racks" + "</a><br>"+
-            "<a href =index.php>" + "Shoe racks" + "</a><br>"+
-            "<a href =index.php>" + "Mirrors" + "</a>");
+            "<a href =home_doors.php>" + "Wood doors" + "</a><br>"+
+            "<a href =home_locks.php>" + "Door locks" + "</a><br>"+
+            "<a href =home_coatracks.php>" + "Coat racks" + "</a><br>"+
+            "<a href =home_shoeracks.php>" + "Shoe racks" + "</a><br>"+
+            "<a href =home_mirrors.php>" + "Mirrors" + "</a>");
 
         navdrop.showHoverBox(opt);
     });

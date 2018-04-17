@@ -18,4 +18,8 @@ class ProductBA extends BaseBA
     {
         return $this->pda->GetMainProduct($area);
     }
+    public function GetSubProduct($area, $callname)
+    {
+        return $this->pda->GetSubProduct($area, $callname);
+    }
 }

@@ -12,8 +12,9 @@ include("shared/header.php");
 <?php
 include ("shared/navmenu.php");
 
-$NavSelection = "Bedroom";
-$obj = $pba->GetMainProduct($NavSelection);
+$NavSelection = "Livingroom";
+$subSelection = "Storage";
+$obj = $pba->GetSubProduct($NavSelection, $subSelection);
 ?>
 
 
@@ -45,24 +46,29 @@ $obj = $pba->GetMainProduct($NavSelection);
                 <!-- Box #2 -->
                 <section>
                     <header>
-                        <h2>BedRoom Furniture</h2>
+                        <h2>Bookshelves</h2>
                         <h3>Beaver values Customer Satisfaction</h3>
                     </header>
-                    <?php
-                    include("shared/productdisplay.php");
-                    ?>
 
-                </section>
+                    <?php
+                    include("shared/productdisplay.php");?>
+
+
+                 </section>
 
             </div>
 
-        </div>
+         </div>
     </div>
 
 </div>
 </div>
 
-<?php include("shared/footer.php"); ?>
+
+
+
+
+ include("shared/footer.php"); ?>
 
 </body>
 </html>
