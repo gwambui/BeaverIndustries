@@ -1,7 +1,12 @@
+#content{
+    width: 80%;
+    margin:0 auto;
+}
 #content-wrapper #content .sidebar
 {
     width:20%;
     left:0;
+    float:left;
 
 
 
@@ -10,6 +15,7 @@
 
     width:75%;
     right:0;
+    float:right;
 }
 .itemDisplay img{
     max-width: 100%; /**/
@@ -17,6 +23,7 @@
     height:130px;
     display: block;
     margin: auto auto;
+    width:auto;
 }
 .itemDisplay div{
 

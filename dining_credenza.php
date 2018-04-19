@@ -19,52 +19,54 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
 ?>
 
 
+
 <!-- Content -->
 <div id="content-wrapper">
     <div id="content">
-        <div class="5grid">
 
-            <div class="sidebar 4u">
 
-                <!-- Box #1 -->
-                <section>
-                    <header>
-                        <h2> Filter</h2>
-                        <h3>side bar sub heading</h3>
-                    </header>
+        <div class="sidebar">
 
-                    <ul class="check-list">
-                        <li>options</li>
-                        <li>options</li>
-                        <li>options</li>
-                        <li>options</li>
-                    </ul>
-                </section>
+            <!-- Box #1 -->
+            <section>
+                <header>
+                    <h2> Filter</h2>
+                    <h3>side bar sub heading</h3>
+                </header>
 
-            </div>
-            <div class=" main 4u">
+                <ul class="check-list">
+                    <li>options</li>
+                    <li>options</li>
+                    <li>options</li>
+                    <li>options</li>
+                </ul>
+            </section>
 
-                <!-- Box #2 -->
-                <section>
-                    <header>
-                        <h2>Credenzas</h2>
-                        <h3>Beaver values Customer Satisfaction</h3>
-                    </header>
-                    <?php
-                    include("shared/productdisplay.php");
-                    ?>
-                </section>
+        </div>
+        <div class="main">
 
-            </div>
+            <!-- Box #2 -->
+            <section>
+                <header>
+                    <h2>Credenzas</h2>
+                    <h3>Beaver values Customer Satisfaction</h3>
+                </header>
+                <?php
+                include("shared/productdisplay.php");
+                ?>
+
+            </section>
 
         </div>
     </div>
+    <div class ="clr"></div>
+</div>
 
-</div>
-</div>
 
 <?php include("shared/footer.php"); ?>
 
 </body>
 </html>
+
+
 

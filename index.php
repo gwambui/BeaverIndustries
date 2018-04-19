@@ -26,35 +26,29 @@ include ("shared/navmenu.php")
 
 
 
-
+<div id ="banner-wrapper">
     <div id="banner">
-        <div class="5grid 5grid-alt">
-            <div class="6u-first">
-
+           <div id="textarea">
                 <!-- Banner Copy -->
 
                 <p>With comfort and style in every design, our furniture transforms every room.
-                    We guarantee superior workmanship and exemplary service right to your door... </p>
+                        We guarantee superior workmanship and exemplary service right to your door... </p>
                 <a href="#" class="button-big">Learn more</a>
 
-            </div>
-            <div class="6u">
-
+           </div>
+           <div id ="banner-img">
                 <!-- Banner Image -->
-                <a href="#" class="bordered-feature-image"><img src="assets/Images/BedsCribsDeckers/Bby1000.jpg" alt="" /></a>
+                 <a href="#" class="bordered-feature-image"><img src="assets/Images/BedsCribsDeckers/Bby1000.jpg" alt="" /></a>
 
-            </div>
-            <div class="5grid-clear"></div>
-        </div>
+           </div>
+        <div class ="clr"></div>
     </div>
 </div>
 
 <!-- Features -->
 <div id="features-wrapper">
     <div id="features">
-        <div class="5grid">
-            <div class="3u-first">
-
+            <div class ="sec1">
                 <!-- Feature #1 -->
                 <section>
                     <a href="#" class="bordered-feature-image"><img src="assets/Images/BedsCribsDeckers/Bby1001.jpg" alt="white baby cot" /></a>
@@ -68,9 +62,9 @@ include ("shared/navmenu.php")
 
                     </p>
                 </section>
-
             </div>
-            <div class="3u">
+
+            <div class ="sec1">
 
                 <!-- Feature #2 -->
                 <section>
@@ -84,7 +78,7 @@ include ("shared/navmenu.php")
                 </section>
 
             </div>
-            <div class="3u">
+            <div class ="sec1">
 
                 <!-- Feature #3 -->
                 <section>
@@ -98,7 +92,7 @@ include ("shared/navmenu.php")
                 </section>
 
             </div>
-            <div class="3u">
+            <div class ="sec1">
 
                 <!-- Feature #4 -->
                 <section>
@@ -109,74 +103,69 @@ include ("shared/navmenu.php")
                         door handle, kitchen or bathroom faucet, window railing,
                     </p>
                 </section>
-
             </div>
-        </div>
     </div>
+    <div class ="clr"></div>
 </div>
+
 
 <!-- Content -->
 <div id="content-wrapper">
     <div id="content">
-        <div class="5grid">
-            <div class="4u-first">
 
                 <!-- Box #1 -->
-                <section>
-                    <header>
-                        <h2>Who We Are</h2>
-                        <h3>The Beaver Family</h3>
-                    </header>
-                    <a href="#" class="feature-image"><img src="assets/Images/HeaderBi.png" alt="Beaver Industries Staff" /></a>
-                    <p>
+        <section class="sec2">
+            <header>
+                <h2>Who We Are</h2>
+                <h3>The Beaver Family</h3>
+            </header>
+            <a href="#" class="feature-image"><img src="assets/Images/HeaderBi.png" alt="Beaver Industries Staff" /></a>
+            <p>
                         Beaver has been in the timber and furniture business since 2008 and home deco and fixtures since 1980.
                         Beaver boasts a wealth of experts in perfecting the look of the home.
                         In venturing into furinuture and and wood finishes, our work comes full circle
                         as we are now a one stop shop, floor to ceiling for everything your house needs to make it your home.
-                    </p>
-                </section>
+            </p>
+        </section>
 
-            </div>
-            <div class="4u">
+
+
 
                 <!-- Box #2 -->
-                <section>
-                    <header>
-                        <h2>Services we offer</h2>
-                        <h3>Beaver values Customer Satisfaction</h3>
-                    </header>
-                    <ul class="check-list">
-                        <li>Professional delivery Services </li>
-                        <li>Expert installation for quality results</li>
-                        <li>Free on location furniture assembly</li>
-                        <li>Fundi for on site measurements</li>
-                        <li>Free consultation and price quote</li>
-                        <li>Custom designs: dream it-we build it</li>
-                        <li>Repairs and alteration-when possible</li>
+        <section class="sec2">
+            <header>
+                <h2>Services we offer</h2>
+                <h3>Beaver values Customer Satisfaction</h3>
+            </header>
+            <ul class="check-list">
+                <li>Professional delivery Services </li>
+                <li>Expert installation for quality results</li>
+                <li>Free on location furniture assembly</li>
+                <li>Fundi for on site measurements</li>
+                <li>Free consultation and price quote</li>
+                <li>Custom designs: dream it-we build it</li>
+                <li>Repairs and alteration-when possible</li>
 
-                    </ul>
-                </section>
-
-            </div>
-            <div class="4u">
+            </ul>
+        </section>
 
                 <!-- Box #3-->
-                <section>
-                    <header>
-                        <h2>Our customer corner</h2>
-                        <h3>Drop us a line on facebook</h3>
-                    </header>
-                    <div class="fb-page" data-href="https://www.facebook.com/BeavertimberCo/"
-                         data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
-                         data-hide-cover="false" data-show-facepile="true"><blockquote
-                                cite="https://www.facebook.com/BeavertimberCo/" class="fb-xfbml-parse-ignore">
-                            <a href="https://www.facebook.com/BeavertimberCo/">Beaver Timber</a></blockquote></div>
-
-                </section>
-
+        <section class="sec2">
+            <header>
+                <h2>Our customer corner</h2>
+                <h3>Drop us a line on facebook</h3>
+            </header>
+            <div class="fb-page" data-href="https://www.facebook.com/BeavertimberCo/"
+                 data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
+                 data-hide-cover="false" data-show-facepile="true"><blockquote
+                        cite="https://www.facebook.com/BeavertimberCo/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/BeavertimberCo/">Beaver Timber</a></blockquote>
             </div>
-        </div>
+
+        </section>
+
     </div>
+    <div class ="clr"></div>
 </div>
 
 <?php include("shared/footer.php"); ?>

@@ -16,13 +16,14 @@ $NavSelection = "Livingroom";
 $obj = $pba->GetMainProduct($NavSelection);
 ?>
 
+Livingroom Furniture
 
 <!-- Content -->
 <div id="content-wrapper">
     <div id="content">
-        <div class="5grid">
 
-            <div class="sidebar 4u">
+
+            <div class="sidebar">
 
                 <!-- Box #1 -->
                 <section>
@@ -40,12 +41,12 @@ $obj = $pba->GetMainProduct($NavSelection);
                 </section>
 
             </div>
-            <div class=" main 4u">
+            <div class="main">
 
                 <!-- Box #2 -->
                 <section>
                     <header>
-                        <h2>Livingroom Furniture</h2>
+                        <h2></h2>
                         <h3>Beaver values Customer Satisfaction</h3>
                     </header>
                     <?php
@@ -55,12 +56,10 @@ $obj = $pba->GetMainProduct($NavSelection);
                 </section>
 
             </div>
-
-        </div>
     </div>
+    <div class ="clr"></div>
+</div>
 
-</div>
-</div>
 
 <?php include("shared/footer.php"); ?>
 
