@@ -1,5 +1,6 @@
 #content{
     width: 80%;
+    display: block;
     margin:0 auto;
 }
 #content-wrapper #content .sidebar
@@ -18,18 +19,23 @@
     float:right;
 }
 .itemDisplay img{
-    max-width: 100%; /**/
-    overflow: hidden;
-    height:130px;
     display: block;
-    margin: auto auto;
-    width:auto;
+    margin: auto;
+    height:130px;
+    max-width: 100%;
+
+
+
+
+
 }
 .itemDisplay div{
 
     margin:0 30px 0 0;
     border: 1px solid #96a9b5;
-    width:90%;
+    width:95%;
+    display: flex;
+    justify-content: center;
 }
 
 .itemDisplay p

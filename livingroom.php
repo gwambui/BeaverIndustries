@@ -16,7 +16,7 @@ $NavSelection = "Livingroom";
 $obj = $pba->GetMainProduct($NavSelection);
 ?>
 
-Livingroom Furniture
+
 
 <!-- Content -->
 <div id="content-wrapper">
@@ -46,7 +46,7 @@ Livingroom Furniture
                 <!-- Box #2 -->
                 <section>
                     <header>
-                        <h2></h2>
+                        <h2>Livingroom Furniture</h2>
                         <h3>Beaver values Customer Satisfaction</h3>
                     </header>
                     <?php

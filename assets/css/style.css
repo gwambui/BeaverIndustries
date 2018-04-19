@@ -6,12 +6,30 @@
 /*********************************************************************************/
 /* Global                                                                        */
 /*********************************************************************************/
-/**/html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+/*html,  span, applet, object, iframe,   h4, h5, h6,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd,  fieldset,  label, legend, table, caption, tbody, tfoot,
+thead,  article, aside, canvas, details, embed, figure, figcaption, ,
+, hgroup, menu, output, ruby, summary, time, mark, audio, video */
+body,h2,h3,p, footer, section, nav,  div,img,form,ol, ul, li,tr, th, td,p,header,img{
     margin: 0;
     padding: 0;
     border: 0;
-    vertical-align: baseline;
+	font-size: 100%;
+	font: inherit;
+	font-family: 'Yanone Kaffeesatz';
+	vertical-align: baseline;
 
+
+}
+h1{
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	vertical-align: baseline;
+	font: inherit;
 }
 	/* Basic */
 
@@ -63,6 +81,7 @@
 .link-list li
 {
     padding: 0.2em 0 0.2em 0;
+	list-style-type: none;
 }
 
 .link-list li:first-child
@@ -195,7 +214,7 @@
 .bordered-feature-image img
 {
 	display: block;
-	width: 100%;
+	max-width: 100%;
 }
 		
 		.button-big
@@ -321,13 +340,13 @@
 				}
 
 
-				#header h1
-				{
+				#header h1 {
 					position: absolute;
 					left: 100px;
 					bottom: 35px;
 					font-family: 'Lobster', sans-serif;
 					font-size: 2.75em;
+
 				}
                 #header h1 a
                 {
@@ -474,6 +493,7 @@
 				margin:0;
 				padding:0;
 			}
+
 			#content section
 			{
 				background: #fff;
@@ -495,7 +515,7 @@
 
 				#content section img
 				{
-					width:100%;
+					max-width:100%;
 				}
 				#content section div{
 					display: block;
@@ -506,7 +526,7 @@
 
 				#content h2
 				{
-					font-size: 1.2em;
+					font-size: 1.4em;
 					color: #373f42;
 					margin: 0 0 0.25em 0;
 				}
@@ -533,6 +553,8 @@
 			{
 				color: #546b76;
 				text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+				width:80%;
+				margin:auto;
 			}
 			#footer section div
 			{
@@ -550,8 +572,6 @@
 				{
 					color: #546b76;
 				}
-
-		/* Copyright */
 
 
 
@@ -637,6 +657,7 @@
 				#header h1
 				{
 					font-size: 2.25em;
+					font-family:  'Lobster', sans-serif;
 				}
 
 				#header nav
