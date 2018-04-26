@@ -9,8 +9,10 @@
     left:0;
     float:left;
 
-
-
+}
+#content h2,#content h3
+{
+    padding-left: 8px;
 }
 #content-wrapper #content .main{
 
@@ -18,15 +20,12 @@
     right:0;
     float:right;
 }
+
 .itemDisplay img{
     display: block;
     margin: auto;
     height:130px;
     max-width: 100%;
-
-
-
-
 
 }
 .itemDisplay div{
@@ -42,7 +41,7 @@
 {
     line-height: 16px;
     font-size: 14px;
-    padding-left: 10px;
+    padding-left: 8px;
 
 
 }
@@ -122,4 +121,10 @@ div.filter{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.sidebar img
+{
+
+    border: solid 4px #b5bec3;
 }

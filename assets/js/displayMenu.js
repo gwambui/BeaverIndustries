@@ -104,7 +104,7 @@ function fnc() {
             "<a href =bedroom_beds.php>" + "Beds" + "</a><br>" +
             "<a href =bedroom_chaise.php>" + "Chaise" + "</a><br>" +
             "<a href =bedroom_vanity.php>" + "Vanity" + "</a><br>" +
-            "<a href =storage.php>" + "Storage" + "</a>");
+            "<a href =bedroom_storage.php>" + "Storage" + "</a>");
 
 
         navdrop.showHoverBox(opt);

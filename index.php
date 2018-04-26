@@ -91,7 +91,7 @@ include ("shared/navmenu.php")
 
                 <!-- Feature #4 -->
                 <section>
-                    <a href="#" class="bordered-feature-image"><img src="assets/Images/Locks/Lamu1136.jpg" alt="Door lock" /></a>
+                    <a href="#" class="bordered-feature-image"><img src="assets/Images/Locks/Laos1137.jpg" alt="Door lock" /></a>
                     <h2>All things fixtures</h2>
                     <p>
                         You can count on the Beaver Industries experts to know the right

@@ -30,16 +30,13 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
             <!-- Box #1 -->
             <section>
                 <header>
-                    <h2> Filter</h2>
+                    <h2>Dining sets</h2>
                     <h3>side bar sub heading</h3>
                 </header>
 
-                <ul class="check-list">
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                </ul>
+                <div>
+                    <img src=".\assets\Images\DiningSets\Athna1412.jpg"
+                </div>
             </section>
 
         </div>
@@ -49,7 +46,7 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
             <section>
                 <header>
                     <h2>Dining Sets</h2>
-                    <h3>Beaver values Customer Satisfaction</h3>
+                    <h3>A touch of intimacy and comfort at evey meal</h3>
                 </header>
                 <?php
                 include("shared/productdisplay.php");

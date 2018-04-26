@@ -13,7 +13,7 @@ include("shared/header.php");
 include ("shared/navmenu.php");
 
 $NavSelection = "Babysbedroom";
-$subSelection = "rockers";
+$subSelection = "Rocking Chairs";
 $obj = $pba->GetSubProduct($NavSelection, $subSelection);
 ?>
 
@@ -32,12 +32,9 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
                     <h3>side bar sub heading</h3>
                 </header>
 
-                <ul class="check-list">
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                </ul>
+                <div>
+                    <img src=".\assets\Images\Sofa\rockingchair.jpg"
+                </div>
             </section>
 
         </div>
