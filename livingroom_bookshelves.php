@@ -33,7 +33,7 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
                     <h3>side bar sub heading</h3>
                 </header>
                 <div>
-                    <img src="../beaver\assets\Images\Bookshelves\Crescent1040.jpg"
+                    <img src=".\assets\Images\Bookshelves\Crescent1040.jpg"
                 </div>
 
             </section>

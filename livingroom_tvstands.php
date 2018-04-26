@@ -34,7 +34,7 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
                 </header>
 
                 <div>
-                    <img src="../beaver\assets\Images\TVStand\Nobu1367.jpg"
+                    <img src=".\assets\Images\TVStand\Nobu1367.jpg"
                 </div>
             </section>
 

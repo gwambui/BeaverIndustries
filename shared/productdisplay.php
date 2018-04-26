@@ -19,7 +19,7 @@ if (count($obj) > 0)
     foreach ($obj as $item => $value) {
         $price  = $fmt->formatCurrency($value['Price'], "KES");
         echo "<td class = 'itemDisplay' > ";
-        echo '<div>'; echo '<img src =../beaver/assets/'.$value['ImageLink'].'.jpg'; echo '>'; echo '</div>'; echo'<br>';
+        echo '<div>'; echo '<img src =./assets/'.$value['ImageLink'].'.jpg'; echo '>'; echo '</div>'; echo'<br>';
         echo '<p>'.$value['ProductID']; echo "<br>";
         echo $value['LineName'].' '.$value['TypeName'];echo "<br>";
         echo '<span>'.$price; echo "</span></p><br>";
