@@ -1,10 +1,13 @@
-
 <?php
 
 require_once 'BAL/BA.php';
 $pba = new ProductBA();
+
 $mainselect = null;
 $subselect = null;
+$filterOptions = array();
+$orderByPrice = '';
+
 //$data = $pba->GetProduct($mainselect, $subselect);
 $fmt = new NumberFormatter( 'en_KE', NumberFormatter::CURRENCY );
 ?>
@@ -36,7 +39,7 @@ $fmt = new NumberFormatter( 'en_KE', NumberFormatter::CURRENCY );
 
 
     </header>
-    <div  id = "hoverbox">
+    <div  id = "hoverbox" class ="dropdown-content">
 
     </div>
 </div>

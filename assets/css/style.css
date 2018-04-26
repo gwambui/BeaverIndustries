@@ -9,10 +9,10 @@
 /*html,  span, applet, object, iframe,   h4, h5, h6,
 blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
 ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd,  fieldset,  label, legend, table, caption, tbody, tfoot,
+dl, dt, dd,  fieldset, legend, table, caption, tbody, tfoot,
 thead,  article, aside, canvas, details, embed, figure, figcaption, ,
 , hgroup, menu, output, ruby, summary, time, mark, audio, video */
-body,h2,h3,p, footer, section, nav,  div,img,form,ol, ul, li,tr, th, td,p,header,img{
+body,h2,h3,p, footer, section, option, label,select, nav,  div,img,form,ol, ul, li,tr, th, td,p,header,img{
     margin: 0;
     padding: 0;
     border: 0;
@@ -23,6 +23,41 @@ body,h2,h3,p, footer, section, nav,  div,img,form,ol, ul, li,tr, th, td,p,header
 
 
 }
+/* submit button*/
+button.css3button {
+	display: block;
+	margin: auto;
+	font-size: 14px;
+	color: #8f8586;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+			top,
+			#ffffff 0%,
+			#ffffff 50%,
+			#d6d6d6);
+	background: -webkit-gradient(
+			linear, left top, left bottom,
+			from(#ffffff),
+			color-stop(0.50, #ffffff),
+			to(#d6d6d6));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 3px solid #8c8c8c;
+	-moz-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 0px 3px rgba(255,255,255,1);
+	-webkit-box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 0px 3px rgba(255,255,255,1);
+	box-shadow:
+			0px 1px 3px rgba(000,000,000,0.5),
+			inset 0px 0px 3px rgba(255,255,255,1);
+	text-shadow:
+			0px -1px 0px rgba(000,000,000,0.1),
+			0px 1px 0px rgba(255,255,255,1);
+}
+
 h1{
 	margin: 0;
 	padding: 0;
@@ -120,8 +155,7 @@ h1{
 		{
 		}
 
-			.check-list li
-			{
+			.check-list li{
 				padding: 0.7em 0 0.7em 45px;
 				font-size: 1.2em;
 				background: url('images/icon-checkmark.png') 0 1.05em no-repeat;
@@ -390,7 +424,7 @@ h1{
 
 				#hoverbox {
                     display: none;
-                    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+                   /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
                     position: absolute;
                     opacity: 0.7;
                     width:auto;

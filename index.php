@@ -1,13 +1,7 @@
-
-
-
-<html>
 <?php
 include("shared/header.php");
 
 ?>
-
-
 
 
 <div id="fb-root"></div>
@@ -20,6 +14,7 @@ include("shared/header.php");
     }(document, 'script', 'facebook-jssdk'));</script>
 <!-- Header -->
 <?php
+
 include ("shared/navmenu.php")
 ?>
 

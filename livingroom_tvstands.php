@@ -33,12 +33,9 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
                     <h3>side bar sub heading</h3>
                 </header>
 
-                <ul class="check-list">
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                </ul>
+                <div>
+                    <img src="../beaver\assets\Images\TVStand\Nobu1367.jpg"
+                </div>
             </section>
 
         </div>

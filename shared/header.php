@@ -1,5 +1,12 @@
+<?php
+$cookie_name = "beaver";
+$cookie_value = "beaverpages";
+if(!isset($_COOKIE)){setcookie($cookie_name, $cookie_value, time() + (86400 * 60), "/");}
 
+?>
 
+<!DOCTYPE html>
+<html>
     <head>
         <title> | Beaver Industries</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -13,7 +20,7 @@
         <link rel="stylesheet" href="assets/css/content.css" />
 
         <!--nav menu drop down list--> <script src =assets/js/displayMenu.js></script>
-
+        <!--Data manipulation--> <script src =assets/js/data.js></script>
 
     </head>
 

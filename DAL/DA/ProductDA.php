@@ -26,5 +26,10 @@ class ProductDA extends  BaseDA
         $rows = $this->db->GetArrayList("call NavList(:Area, :Callname);", $bindParms);
         return $rows;
     }
-
+    public function GetDetails($area)
+    {
+        $bindParms = array("Area" => $area);
+        $rows = $this->db->GetArrayList("call AreaDetails(:Area);", $bindParms);
+        return $rows;
+    }
 }

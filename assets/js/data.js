@@ -4,11 +4,22 @@ var InputData = function(){
 
 };
 
+$(filter);
+function filter(){
 
-$(function (){
-    var jsdata = new InputData();
+    //var jsdata = new InputData();
+
+    /*$("input").click(function () {
+    }, function () {
+        $("input").attr("checked", "checked");
+
+        /!*************************************!/
+    });*/
 
 
 
+}
+function setChecked(){
+    this.attr("checked", "checked");
 
-});
+}

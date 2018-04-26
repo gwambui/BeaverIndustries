@@ -9,11 +9,16 @@ var NavigatorDrop = function ($hoverbox) {
     var nav2 = $("#navDining");
     var anchor  = nav2.position();
 
+    this.setVars = function(){
+         nav = $("nav");
+         navpos = nav.position();
+         nav2 = $("#navDining");
+         anchor  = nav2.position();
+    };
 
     this.hideHover = function () {
 
-        $hoverbox.css("display","none").fadeout(1000);
-
+        $hoverbox.css("display","none");
     };
 
     this.showHoverBox = function(value) {
@@ -21,7 +26,11 @@ var NavigatorDrop = function ($hoverbox) {
         var pos = selector.position();
 
         //$hoverbox.show();
-        $hoverbox.css("left", navpos.left + pos.left + anchor.left-20).fadeIn(500);
+        console.log(value);
+        if(value === "#navHome"){ $hoverbox.css("right", pos.right).fadeIn(500);}
+        else{$hoverbox.css("left", navpos.left + pos.left + anchor.left + 40).fadeIn(500);
+            //$hoverbox.css("right", pos.right).fadeIn(500);
+            }
 
     };
 
@@ -34,36 +43,28 @@ function fnc() {
     var opt;
     var navdrop = new NavigatorDrop($('#hoverbox'));
 
+    $( window ).resize(function() {
+        navdrop.setVars();
+    });
+
     $("nav").hover(function () { //navdrop.setTrackN();
     }, function () {
 
 
         /*************************************/
-        $("#hoverbox").hover(function () {//navdrop.resetTrackN();
-            navdrop.setTrackH();
-
-
-        }, function () {
-            //navdrop.resetTrackH();
-            navdrop.hideHover();
-        });
+        $("#hoverbox").hover(function () {}, function () {navdrop.hideHover();});
         /* ************************************/
 
-
-        $("#contact").mouseenter(function () {//navdrop.resetTrackN();
-            navdrop.hideHover();
-        });
+        $("#contact").mouseenter(function () {navdrop.hideHover();});
 
 
-        $("#banner").mouseenter(function () {//navdrop.resetTrackN();
-            navdrop.hideHover();
-        });
+        $("#banner").mouseenter(function () {navdrop.hideHover();});
 
-        $("#content-wrapper").mouseenter(function () {//navdrop.resetTrackN();
-            navdrop.hideHover();
-        });
+        $("#content-wrapper").mouseenter(function () {navdrop.hideHover();});
 
     });
+
+
 
     $("#navLivingroom").mouseover(function () {
 
@@ -103,7 +104,7 @@ function fnc() {
             "<a href =bedroom_beds.php>" + "Beds" + "</a><br>" +
             "<a href =bedroom_chaise.php>" + "Chaise" + "</a><br>" +
             "<a href =bedroom_vanity.php>" + "Vanity" + "</a><br>" +
-            "<a href =Storage.php>" + "Storage" + "</a>");
+            "<a href =storage.php>" + "Storage" + "</a>");
 
 
         navdrop.showHoverBox(opt);
