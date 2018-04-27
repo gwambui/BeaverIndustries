@@ -27,7 +27,7 @@ var NavigatorDrop = function ($hoverbox) {
 
         //$hoverbox.show();
         console.log(value);
-        if(value === "#navHome"){ $hoverbox.css("right", pos.right).fadeIn(500);}
+        if(value === "#navHome"){ $hoverbox.css( "right", pos.right).fadeIn(500);}
         else{$hoverbox.css("left", navpos.left + pos.left + anchor.left + 40).fadeIn(500);
             //$hoverbox.css("right", pos.right).fadeIn(500);
             }
