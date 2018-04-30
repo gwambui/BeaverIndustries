@@ -28,7 +28,7 @@ include ("shared/navmenu.php")
 
                 <p>With comfort and style in every design, our furniture transforms every room.
                         We guarantee superior workmanship and exemplary service right to your door... </p>
-                <a href="#" class="button-big">Learn more</a>
+                <a href="contact.php" class="button-big">Learn more</a>
 
            </div>
            <div id ="banner-img">
