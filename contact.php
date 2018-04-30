@@ -1,6 +1,3 @@
-
-
-<html>
 <?php
 include("shared/header.php");
 
@@ -26,7 +23,4 @@ include ("shared/navmenu.php")
 
 
 <?php include("shared/footer.php"); ?>
-
-</body>
-</html>
 

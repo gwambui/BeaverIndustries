@@ -1,6 +1,3 @@
-
-
-<html>
 <?php
 include("shared/header.php");
 
@@ -61,7 +58,5 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
 
 <?php include("shared/footer.php"); ?>
 
-</body>
-</html>
 
 

@@ -292,10 +292,10 @@ h1{
 		}
 
 /*********************************************************************************/
-/* 1200px (>= 768px)                                                             */
+/* 1200px (>= 481px)                                                             */
 /*********************************************************************************/
 
-	@media only screen and (min-width: 768px) {
+	@media only screen and (min-width: 481px) {
 
 		section:last-child
 		{
@@ -340,8 +340,8 @@ h1{
 
 		}
 			#features-wrapper
-			{
-				background: #353D40 url('images/bg02.jpg');
+			{   /*#353D40*/
+				background:  url('images/bg02.jpg');
 				border-bottom: solid 1px #272e31;
 				padding: 45px 0 45px 0;
 				width:80%;
@@ -361,8 +361,9 @@ h1{
 			
 			#footer-wrapper
 			{
-				background: #353D40 url('images/bg02.jpg');
+				/*background: #353D40; !*url('images/bg02.jpg');*!*/
 				padding: 45px 25px;
+                background: url('images/bg02.jpg');
 			}
 		
 		/* Header */
@@ -380,7 +381,6 @@ h1{
 					bottom: 25px;
 					float: left;
 				}
-
 
 				#header h1 {
 					position: absolute;
@@ -625,10 +625,10 @@ h1{
 	}
 	
 /*********************************************************************************/
-/* 1000px (>= 768px && <= 1199px)                                                */
+/* 1000px (>= 481px && <= 1199px)                                                */
 /*********************************************************************************/
 
-	@media only screen and (max-width: 1199px) and (min-width: 768px) {
+	@media only screen and (max-width: 1199px) and (min-width: 481px) {
 
 		/* Multi-use */
 
@@ -739,13 +739,13 @@ h1{
 				{
 					margin: 0 0 1.25em 0;
 				}
-	}
+}
 	
 /*********************************************************************************/
-/* Mobile (<= 767px)                                                             */
+/* Mobile (<= 480px)                                                             */
 /*********************************************************************************/
 
-	@media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 480px) {
 
 		body, input, textarea, select
 		{
@@ -792,18 +792,14 @@ h1{
 				border-bottom: solid 1px #272d30;
 				box-shadow: inset 0 -1px 0 0 #51575a;
 				padding: 15px;
-
+                background-position: bottom center;
 			}
 
-			
-				/*Don't want the banner? Uncomment the lines below:*/
-
-				#header-wrapper { background-position: bottom center; }
-				#banner { display: none !important; }
+       /* #banner { display: none !important; }*/
 
 			#features-wrapper
-			{
-				background: #353D40 url('images/bg02.jpg');
+			{/*#353D40 */
+				background: url('images/bg02.jpg');
 				padding: 15px 15px 30px 15px;
 				clear: both;
 
@@ -819,8 +815,9 @@ h1{
 			#footer-wrapper
 			{
 				padding: 40px 15px 15px 15px;
-
-			}
+               /* background: url('images/bg02.jpg');*/
+                background: url('images/bg02.jpg');
+            }
 
 		/* Header */
 		

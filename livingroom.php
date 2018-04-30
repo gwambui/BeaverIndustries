@@ -65,6 +65,4 @@ $obj = $pba->GetMainProduct($NavSelection);
 
 <?php include("shared/footer.php"); ?>
 
-</body>
-</html>
 

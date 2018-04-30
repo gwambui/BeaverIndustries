@@ -164,7 +164,3 @@ include ("shared/navmenu.php")
 </div>
 
 <?php include("shared/footer.php"); ?>
-
-</body>
-</html>
-
