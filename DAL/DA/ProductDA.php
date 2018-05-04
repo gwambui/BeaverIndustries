@@ -32,4 +32,10 @@ class ProductDA extends  BaseDA
         $rows = $this->db->GetArrayList("call AreaDetails(:Area);", $bindParms);
         return $rows;
     }
+    public function SingleObject($ID)
+    {
+        $bindParms = array("ID" => $ID);
+        $rows = $this->db->GetArrayList("call SingleObject(:ID);", $bindParms);
+        return $rows;
+    }
 }

@@ -27,4 +27,8 @@ class ProductBA extends BaseBA
         return $this->pda->GetDetails($area);
     }
 
+    public function SingleObject($ID)
+    {
+        return $this->pda->SingleObject($ID);
+    }
 }

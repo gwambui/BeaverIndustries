@@ -35,14 +35,15 @@
                                             value=\"". $value['Details']."\">". $value['Details'];
                         echo "<input name =\"checked[]\" type=\"checkbox\" 
                                            value=\"". $value['Details'] ."\" >
-                                           <span class=\"checkmark\"></span><br></label>";
+                                           <span class=\"checkmark\"></span><br>
+                                           </label>";
                     }
 
 
                     ?>
             </div>
-            <!-- </li>
-             <li>options</li>
+        </li>
+            <!--  <li>options</li>
              <li>options</li>-->
     </ul>
     <button  type="submit" class="css3button">Submit</button>

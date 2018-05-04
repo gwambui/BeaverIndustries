@@ -39,17 +39,29 @@ include ("shared/navmenu.php")
 
                 <br><br>
 
-                <h2>Call us</h2><hr>
-                <h2>Kinyanjui Wanyoike, Managing Director
-                    <a href="tel:+254722765657">Tel: +254 722 675 657</a><br>
-                </h2>
-                <h2>Sales Specialists</h2><hr>
+                    <h2>Hours</h2><hr>
 
-                <a href="tel:+254722981937">Edwin: +254 722 981 937</a><br>
-                    <a href="tel:+254728204489">Cate: +254 728 204 489</a><br>
-                    <a href="tel:+254710303030">John: +254 710 303 030</a>
-                <h2><br>Email us</h2><hr>
-                <a href="mailto:beaver@beaverindustries.co.ke">Email</a>
+                    <ul class="check-list">
+                        <li>Monday: 8:00am - 6:00pm</li>
+                        <li>Tuesday: 8:00am - 6:00pm</li>
+                        <li>Wednesday: 8:00am - 6:00pm</li>
+                        <li>Thursday: 8:00am - 6:00pm</li>
+                        <li>Friday: 8:00am - 6:00pm</li>
+                        <li>Saturday: 9:00am - 5:00pm</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+
+                    <h2>Call us</h2><hr>
+                    <h2>Kinyanjui Wanyoike, Managing Director
+                        <a href="tel:+254722765657">Tel: +254 722 675 657</a><br>
+                    </h2>
+                    <h2>Sales Specialists</h2><hr>
+
+                    <a href="tel:+254722981937">Edwin: +254 722 981 937</a><br>
+                        <a href="tel:+254728204489">Cate: +254 728 204 489</a><br>
+                        <a href="tel:+254710303030">John: +254 710 303 030</a>
+                    <h2><br>Email us</h2><hr>
+                    <a href="mailto:beaver@beaverindustries.co.ke">Email</a>
 
 
             </section>

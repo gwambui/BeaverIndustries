@@ -79,7 +79,7 @@ include ("shared/navmenu.php")
                 <section>
                     <a href="#" class="bordered-feature-image"><img src="assets/Images/DiningSets/Bachelor1119.jpg" alt="" /></a>
                     <h2>Dining King</h2>
-                    <p>
+                    <p class="index">
                         Be crowned the top host or hostess with your classic elegant
                         <a href="dining.php">dining sets</a>
                         We offer dining tables for groups of four, six or more.

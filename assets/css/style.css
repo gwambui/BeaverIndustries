@@ -102,15 +102,15 @@ ul, ol, p, dl
 a
 {
     text-decoration: none;
-
 }
-
 a:hover
 {
 
     text-decoration: underline;
 }
-
+a:visited{
+    text-decoration: none;
+}
 section > :last-child, .last-child
 {
     margin-bottom: 0 !important;
@@ -297,6 +297,19 @@ section > :last-child, .last-child
 
 @media only screen and (min-width: 768px) {
 
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
     section:last-child {
         margin-bottom: 0 !important;
     }
@@ -376,7 +389,7 @@ section > :last-child, .last-child
 
     #header h1 {
         position: absolute;
-        left: 100px;
+        left: 8%;
         bottom: 35px;
         font-family: 'Lobster', sans-serif;
         font-size: 2.75em;
@@ -404,6 +417,8 @@ section > :last-child, .last-child
     }
 
     #header nav {
+        display: flex;
+        justify-content: center;
         position: absolute;
         right: 0;
         bottom: 30px;
@@ -412,7 +427,7 @@ section > :last-child, .last-child
     }
 
     #header nav a {
-        padding-left: 20px;
+        padding: 0 0 0 1%;
         color: #c6c8c8;
         text-decoration: none;
         font-size: 1.4em;
@@ -564,7 +579,7 @@ section > :last-child, .last-child
     }
 
     #content a {
-        color: #ED391B;
+        color:  #474f51;
     }
 
     #content header {
@@ -601,7 +616,7 @@ section > :last-child, .last-child
 /* 1000px (>= 768px && <= 1050px)                                                */
 /*********************************************************************************/
 
-@media only screen and (min-width: 768px) and (max-width: 1050px)  {
+@media only screen and (min-width: 768px) and (max-width: 1220px)  {
 
     /* Multi-use */
     .check-list {
@@ -657,7 +672,7 @@ section > :last-child, .last-child
 
     /* Header */
     #header {
-        width: 100%;
+        width: 80%;
     }
 
     #header h1 {
@@ -670,7 +685,7 @@ section > :last-child, .last-child
 
     #header nav a, #header #contact a {
         font-size: 1.1em;
-        margin-left: 10px;
+       /* margin-left: 10px;*/
         margin-right: 0;
         padding: 0;
     }

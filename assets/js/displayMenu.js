@@ -1,13 +1,13 @@
 
 
 
-var NavigatorDrop = function ($hoverbox) {
+let NavigatorDrop = function ($hoverbox) {
 
 
-    var nav = $("nav");
-    var navpos = nav.position();
-    var nav2 = $("#navDining");
-    var anchor  = nav2.position();
+    let nav = $("nav");
+    let navpos = nav.position();
+    let nav2 = $("#navDining");
+    let anchor  = nav2.position();
 
     this.setVars = function(){
          nav = $("nav");
@@ -22,8 +22,8 @@ var NavigatorDrop = function ($hoverbox) {
     };
 
     this.showHoverBox = function(value) {
-        var selector = $(value);
-        var pos = selector.position();
+        let selector = $(value);
+        let pos = selector.position();
 
         //$hoverbox.show();
         console.log(value);
@@ -37,11 +37,12 @@ var NavigatorDrop = function ($hoverbox) {
 
 };
 
-$(fnc);
+$(navDropdown);
+$(itemDisplay);
 
-function fnc() {
-    var opt;
-    var navdrop = new NavigatorDrop($('#hoverbox'));
+function navDropdown() {
+    let opt;
+    let navdrop = new NavigatorDrop($('#hoverbox'));
 
     $( window ).resize(function() {
         navdrop.setVars();
@@ -63,7 +64,6 @@ function fnc() {
         $("#content-wrapper").mouseenter(function () {navdrop.hideHover();});
 
     });
-
 
 
     $("#navLivingroom").mouseover(function () {
@@ -192,6 +192,4 @@ function fnc() {
     });
     */
 }
-
-
 
