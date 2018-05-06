@@ -24,23 +24,28 @@ $obj = $pba->SingleObject($var_value);
     <div id="content">
 
             <section>
-                <div class="singleimg">
+                <div class="secondaryImg">
                     <?php
                         foreach ($obj as $item => $value){
+                        //displays available images on side bar
+                            $imglink= './assets/'.$value['ImageLink'].'.jpg'; //\''.$value['ImageLink'].'.jpg>\'
 
-                           echo '<img src =./assets/'.$value['ImageLink'].'.jpg>';
+                            //src =./assets/'.$value['ImageLink'].'.jpg>'
+                            echo '<img class = \'setimg\' src =' .$imglink.'>';
+
                         }
                         ?>
                 </div>
                 <div class="largeimg">
                     <?php
+                    //Displays final image in larger viewing frame
                     echo '<h2>'.$value['ProductID'].' '.
                         $value['LineName']. ' '.
                         $value['Details']. ': '.
                         $value['TypeName'].' </h2><p>'.
                         $value['Description'].' Perfect for your '.
                         $value['Area'].' <br>';
-                         echo '<img src =./assets/'.$value['ImageLink'].'.jpg>';?>
+                         echo '<img id=\'largeimg\' src =./assets/'.$value['ImageLink'].'.jpg>';?>
 
                 </div>
                 <div class="singleinfo">
@@ -59,9 +64,11 @@ $obj = $pba->SingleObject($var_value);
 
 
                 </div><div class="clr"></div>
+
+            </section>
     </div>
                 <?php //var_dump($obj);?>
-            </section>
+
 
 </div>
 <?php include("shared/footer.php"); ?>

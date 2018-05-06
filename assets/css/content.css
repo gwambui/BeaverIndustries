@@ -154,7 +154,7 @@ div.filter{
 }
 /*Single object display*/
 
-#content .singleimg {
+#content .secondaryImg {
     width: 30%;
     margin-left: 20px;
     float:left;
@@ -165,7 +165,7 @@ div.filter{
      width: 60%;
 
  }
-.singleimg img, .largeimg img{
+.secondaryImg img, .largeimg img{
     max-width: 80% !important;
     border: solid 4px #b5bec3;
     display: block;

@@ -1,8 +1,5 @@
 
 
-var InputData = function(){
-
-};
 
 $(filter);
 function filter(){
@@ -19,7 +16,18 @@ function filter(){
 
 
 }
-function setChecked(){
-    this.attr("checked", "checked");
+$(swapImage);
+function swapImage(){
+
+    $(".setimg").click(function () {
+
+        let elem = $(this).attr('src');
+
+
+        $("#largeimg").attr('src',elem);
+
+
+    });
 
 }
+

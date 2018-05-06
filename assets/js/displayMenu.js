@@ -38,7 +38,7 @@ let NavigatorDrop = function ($hoverbox) {
 };
 
 $(navDropdown);
-$(itemDisplay);
+
 
 function navDropdown() {
     let opt;
