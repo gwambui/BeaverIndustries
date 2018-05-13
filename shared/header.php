@@ -9,6 +9,7 @@ if(!isset($_COOKIE)){setcookie($cookie_name, $cookie_value, time() + (86400 * 60
 <html>
     <head>
         <title> | Beaver Industries</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <meta name="description" content="Wood home finishing, Custom furniture for your home or office at great prices.Nairobi. Kenya" />
         <meta name="Keywords" content="Furniture, beds, desk, baby cots, doors, floors, wooden stairs, block board" />
