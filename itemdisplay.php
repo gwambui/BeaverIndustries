@@ -58,7 +58,7 @@ $obj = $pba->SingleObject($var_value);
 
                     ?>
                     <label>Add to Cart
-                    <input type="number" min="1">
+                    <input class="input"  type="number" min="1">
                         <button type="submit" class="css3button">Add</button>
                     </label>
 

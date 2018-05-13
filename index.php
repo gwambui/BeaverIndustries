@@ -24,11 +24,11 @@ include ("shared/navmenu.php")
 <div id ="banner-wrapper">
     <div id="banner">
            <div id="textarea">
-                <!-- Banner Copy -->
+                <!-- Banner Copy button-big-->
 
                 <p>With comfort and style in every design, our furniture transforms every room.
                         We guarantee superior workmanship and exemplary service right to your door... </p>
-                <a href="contact.php" class="button-big">Learn more</a>
+               <button class="css3button"><a href="contact.php">Learn more</a></button>
 
            </div>
            <div id ="banner-img">
@@ -127,7 +127,7 @@ include ("shared/navmenu.php")
 
 
                 <!-- Box #2 -->
-        <section class="sec2">
+        <section class="sec2 indexmidcontent">
             <header>
                 <h2>Services we offer</h2>
                 <h3>Beaver values Customer Satisfaction</h3>

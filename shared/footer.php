@@ -32,7 +32,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h2>Living area and office</h2>
+                    <h2>Den & office</h2>
                     <ul class="link-list last-child">
                         <li>Tv stands, coffee tables</li>
                         <li>Couches, Seats</li>
@@ -43,7 +43,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h2>Home decor and Materials</h2>
+                    <h2>Home decor & Materials</h2>
                     <ul class="link-list last-child">
                         <li>Doors, door frames</li>
                         <li>floors, stairs,railing</li>

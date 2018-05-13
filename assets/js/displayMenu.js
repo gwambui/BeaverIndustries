@@ -27,8 +27,8 @@ let NavigatorDrop = function ($hoverbox) {
 
         //$hoverbox.show();
         console.log(value);
-        if(value === "#navHome"){ $hoverbox.css( "right", pos.right).fadeIn(500);}
-        else{$hoverbox.css("left", navpos.left + pos.left + anchor.left + 40).fadeIn(500);
+        if(value === "#navHome"){ $hoverbox.css("left", navpos.left + pos.left -20 ).fadeIn(500);}
+        else{$hoverbox.css("left", navpos.left + pos.left  ).fadeIn(500);
             //$hoverbox.css("right", pos.right).fadeIn(500);
             }
 
@@ -156,6 +156,11 @@ function navDropdown() {
             "<a href =home_mirrors.php>" + "Mirrors" + "</a>");
 
         navdrop.showHoverBox(opt);
+    });
+
+    $(".tag").click(function () {
+        $(".topfilter").toggle(1000);
+
     });
 
     /*$("#navKitchen").mouseover(function(){

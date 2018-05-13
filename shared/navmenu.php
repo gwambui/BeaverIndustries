@@ -34,7 +34,7 @@ $fmt = new NumberFormatter( 'en_KE', NumberFormatter::CURRENCY );
 
             </nav>
     </header>
-    <div  id = "hoverbox" class ="dropdown-content">
+    <div  id = "hoverbox" class ="dropdown-content"> </div>
 
-    </div>
+
 </div>
