@@ -727,7 +727,7 @@ header #contact {
 /* 1200px (>= 770px <1070)                                                             */
 /*********************************************************************************/
 
-@media only screen and  (max-width: 1078px) and (min-width: 760px) {
+@media screen and  (max-width: 1078px) and (min-width: 760px) {
     /* Header */
     #header h1 a {
 
@@ -764,7 +764,7 @@ header #contact {
 /* 1200px (>= 768px)                                                             */
 /*********************************************************************************/
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     /* For desktop: */
     .col-1 {width: 8.33%;}
