@@ -18,7 +18,7 @@ if(!isset($_COOKIE)){setcookie($cookie_name, $cookie_value, time() + (86400 * 60
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
         <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="stylesheet" href="assets/css/content.css" />
+       <!-- <link rel="stylesheet" href="assets/css/content.css" />-->
 
         <!--nav menu drop down list--> <script src =assets/js/displayMenu.js></script>
         <!--Data manipulation--> <script src =assets/js/data.js></script>
