@@ -73,14 +73,14 @@
     }
     #header-wrapper {
         padding: 0;
-        min-height: 100px;
+        min-height: 150px;
     }
 
 
     #header {
         width: 80%;
         margin: 0 auto;
-        height: 100px;
+        height: 150px;
     }
     #banner-wrapper {
 

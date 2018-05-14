@@ -285,10 +285,7 @@ button.css3button {
     text-align: center;
     height: fit-content;
 }
-#header
-{
 
-}
 header #contact {
 
  }
@@ -545,7 +542,7 @@ header #contact {
 .itemDisplay img{
     display: block;
     margin: auto;
-    height:80px;
+    height:130px;
     max-width: 100%;
 
 
@@ -706,7 +703,13 @@ header #contact {
 }
 #footer section div {
 
+    width: 50%;
+    float: left;
+}
+#footer section div:Last-child {
+
     width: 100%;
+
 }
 
 #footer h2 {
@@ -736,9 +739,8 @@ header #contact {
     }
     #header nav a, #header #contact a {
         font-size: 1em !important;
-        /* margin-left: 10px;*/
-        margin-right: 0;
-        padding: 0;
+
+
     }
     /* Banner */
     #banner p {
@@ -805,7 +807,7 @@ header #contact {
     #header {
         width: 80%;
         margin: 0 auto;
-        height: 100px;
+        height: 150px;
     }
     #banner-wrapper {
 
@@ -843,7 +845,8 @@ header #contact {
         text-align: right;
         font-size: 1.2em;
         float: right;
-        margin-left: 100px;
+        padding-left: 88%;
+        padding-bottom: 10px;
 
 
     }
@@ -854,6 +857,7 @@ header #contact {
         float:right;
         top: 0px;
         font-weight: 200;
+        padding-bottom: 10px;
     }
 
 
@@ -866,7 +870,7 @@ header #contact {
     }
 
     #hoverbox {
-        top: 80px;
+        top: 120px;
 
 
     }
@@ -934,15 +938,12 @@ header #contact {
         float:right;
     }
     .topbar{display: none;}
-    .itemDisplay img{
-        height:130px;
 
-
-    }
     /************** Footer **************/
-    #footer section div {
-        float: left;
-        width: 20%;
+    #footer section div  {
+        float: left !important;
+        width: 20% !important;
 
-    }
+    }/*#footer section div:Last-child{width: 20%;float: right;}*/
+
 }

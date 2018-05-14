@@ -52,6 +52,8 @@ $obj = $pba->GetMainProduct($NavSelection);
 
                 </header>
                 <?php
+                include ("shared/topbar.php");
+
                 include("shared/productdisplay.php");
                 ?>
 

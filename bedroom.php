@@ -53,6 +53,8 @@ $obj = $pba->GetMainProduct($NavSelection);
                     <h3>Beaver values Customer Satisfaction</h3>
                 </header>
                 <?php
+                include ("shared/topbar.php");
+
                 include("shared/productdisplay.php");
                 ?>
 
