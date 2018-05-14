@@ -542,7 +542,7 @@ header #contact {
 .itemDisplay img{
     display: block;
     margin: auto;
-    height:130px;
+    height:80px;
     max-width: 100%;
 
 
@@ -937,6 +937,10 @@ header #contact {
         right:0;
         float:right;
     }
+    .itemDisplay img{
+
+        height:130px;
+       }
     .topbar{display: none;}
 
     /************** Footer **************/

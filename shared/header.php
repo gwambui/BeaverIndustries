@@ -14,7 +14,9 @@ if(!isset($_COOKIE)){setcookie($cookie_name, $cookie_value, time() + (86400 * 60
                     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
                 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-M8GN99K');</script>
+            })(window,document,'script','dataLayer','GTM-M8GN99K');
+            gtag('config', 'UA-119203606-1');
+        </script>
         <!-- End Google Tag Manager -->
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -34,3 +36,5 @@ if(!isset($_COOKIE)){setcookie($cookie_name, $cookie_value, time() + (86400 * 60
     </head>
 
     <body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
