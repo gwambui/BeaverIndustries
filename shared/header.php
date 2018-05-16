@@ -3,6 +3,10 @@ $cookie_name = "beaver";
 $cookie_value = "beaverpages";
 if(!isset($_COOKIE)){setcookie($cookie_name, $cookie_value, time() + (86400 * 60), "/");}
 
+//session
+session_start();
+
+
 ?>
 
 <!DOCTYPE html>

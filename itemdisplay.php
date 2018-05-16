@@ -18,6 +18,7 @@ include ("shared/navmenu.php");
 
 $var_value = $_POST['ID'];
 $obj = $pba->SingleObject($var_value);
+
 ?>
 
 <div id="content-wrapper">
@@ -56,18 +57,36 @@ $obj = $pba->SingleObject($var_value);
 
                              '<br><span style="font-weight: bold" >'.$price. '</span> </p>';
 
-                    ?>
+                    ?><!--?action=add&code=--><?php /*echo $value['ProductID']*/?>
+                    <form method="post" action=""  >
                     <label>Add to Cart
-                    <input class="input"  type="number" min="1">
-                        <button type="submit" class="css3button">Add</button>
+                    <input class="input"  type="number" min="1" name="pieces" >
+                        <button type="submit" name='ID' value="<?php echo $value['ProductID'] ?>" class="css3button">Add</button>
                     </label>
-
+                    </form>
 
                 </div><div class="clr"></div>
 
             </section>
     </div>
-                <?php //var_dump($obj);?>
+                <?php
+                if(!empty($_POST['pieces']))
+                {
+                    $myarr= $obj[0];
+                    $myarr["Pieces"] = $_POST["pieces"];
+                  //$obj[0]["Pieces"] = $_POST["pieces"];
+
+
+
+                    $_SESSION["cart"][]=$myarr;
+                      /*["ID"=>$_POST["ID"], "Pieces"=> $_POST["pieces"]];*/
+
+                    //var_dump($myarr);
+                    /* $_SESSION["cart"] += ;
+                    $_SESSION["cart"] += ["Details" => $_POST['pieces']];,$value['ProductID']*/
+                    $myarr= array();
+                }
+                ?>
 
 
 </div>

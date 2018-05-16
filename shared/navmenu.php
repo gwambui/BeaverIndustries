@@ -18,7 +18,7 @@ $fmt = new NumberFormatter( 'en_KE', NumberFormatter::CURRENCY );
 <div id="header-wrapper" >
 
     <header id="header" >
-        <div id = "contact"><a href="contact.php">Contact Us</a></div>
+        <div id = "contact"><a href="cart.php">Cart</a>&nbsp; <a href="contact.php">Contact Us</a></div>
         <div class="col-5">
 
             <!-- Logo --><div><img src="assets/Images/beaver-logo.svg" width = "80px" height = "80 px" alt="BI logo" /> </div>

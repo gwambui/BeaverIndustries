@@ -81,6 +81,32 @@ class SqlObjFilter
         }
 
     }
+
+    /******calculate order subtotals and total******/
+    function OrderSubTotals(){
+
+        for ($i =0; $i<count($this->arr); $i++)
+        {
+            $this->arr[$i]['SubTotal']= $this->arr[$i]['Price'] * $this->arr[$i]['Pieces'];
+        }
+        /*foreach ($this->arr as $item){
+
+            $item["SubTotal"] = $item['Pieces'] * $item['Price'];
+            //$myarr["Pieces"] = $_POST["pieces"];
+            //echo $item['Price'].$item['Pieces']. $item['SubTotal'];
+var_dump($this->arr);
+        }*/
+
+        return $this->arr;
+    }
+    function OrderTotal(){
+        $total=0;
+        foreach ($this->arr as $item){
+            $total += $item['Pieces']*$item['Price'];
+        }
+
+        return $total;
+    }
 }
 
 

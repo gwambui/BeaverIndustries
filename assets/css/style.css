@@ -690,6 +690,21 @@ header #contact {
     display: inline-block;
 
 }
+/********************shopping cart page*********/
+
+.order th{
+    width:12%;
+    font-weight: bold;
+    border-bottom: 1px dashed #96a9b5;
+
+}
+.order tr{    }
+.order td{
+    text-align: center;
+
+    border-bottom: 1px dashed #96a9b5;
+
+}
 /************** Footer **************/
 #footer {
     color: #546b76;
@@ -841,15 +856,17 @@ header #contact {
         text-align: left;
 
     }
-    #header #contact a {
+    #header #contact  {
         text-align: right;
-        font-size: 1.2em;
-        float: right;
-        padding-left: 88%;
+        padding-left: 80%;
         padding-bottom: 10px;
 
 
     }
+    #header #contact a{
+        display: inline-block;
+        font-size: 1.2em;
+        font-weight: 200;}
     #header nav {
 
         position: relative;
