@@ -90,7 +90,7 @@ class SqlObjFilter
         {
             $this->arr[$i]['SubTotal']= $this->arr[$i]['Price'] * $this->arr[$i]['Pieces'];
         }
-
+//var_dump($this->arr);
         return $this->arr;
     }
     /*********************Calculate total of each order*/
@@ -136,6 +136,20 @@ class SqlObjFilter
             }
         }
         return $test;
+    }
+    function RemoveFromCart(){
+        for ($i = 0; $i < count($_SESSION["cart"]); $i++) {
+            //($_SESSION["cart"] as $item => $value){
+
+            if ($this->arr["ProductID"] === $_SESSION["cart"][$i]["ProductID"]) {
+                $_SESSION["cart"][$i]["Pieces"] --;
+               if($_SESSION["cart"][$i]["Pieces"] == 0){
+                   unset($_SESSION["cart"][$i]);
+                   $_SESSION["cart"] = array_values($_SESSION["cart"]);
+               }
+                break;
+            }
+        }
     }
 }
 

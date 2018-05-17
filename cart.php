@@ -26,6 +26,21 @@ if(isset($_POST['ClearCart']))
     session_write_close();
 }
 
+if(isset($_POST['RemoveItem']))
+{
+    $obj =  $pba->SingleObject($_POST['RemoveItem']);
+    $myarr =$obj[0];
+   $removeItem = new SqlObjFilter($myarr);
+   $removeItem->RemoveFromCart();
+
+   if(count($_SESSION["cart"])==0){
+       session_unset();
+       session_destroy();
+       session_write_close();
+   }
+
+}
+
 
 /*var_dump($_SESSION['cart']);
 
@@ -61,6 +76,7 @@ session_unset();
                         echo "<th>Detail</th>";
                         echo "<th>Price</th>";
                         echo"<th>Pieces</th>";
+                        echo"<th>&nbsp;</th>";
                         echo"<th>Total</th>";
 
                         /*number of pieces ordered
@@ -71,9 +87,10 @@ session_unset();
                         echo '</bold></tr>';
 
                         foreach($order as $item =>$value){
-                            $price  = $fmt->formatCurrency($value['Price'], "KES");
-                            $subtotal =$price  = $fmt->formatCurrency($value['SubTotal'], "KES");
 
+                            $price  = $fmt->formatCurrency($value['Price'], "KES");
+                            $subtotal   = $fmt->formatCurrency($value['SubTotal'], "KES");
+                            
                             echo"<tr>" ;
                             //var_dump($value); var_dump($data)  ;
 
@@ -84,6 +101,9 @@ session_unset();
                             echo "<td> $value[TypeName]</td>";
                             echo "<td> $price</td>";
                             echo "<td> $value[Pieces]</td>";
+                            echo "<td><form  action='' method='post' ><button type='submit' 
+                            class=\"css3button\" name='RemoveItem' value=".$value['ProductID']."> 
+                            RemoveItem </button></form></td>";
                             echo "<td> $subtotal</td>";
 
                             /*foreach ($value as $data){
@@ -92,7 +112,7 @@ session_unset();
                                  }*/echo "</tr>";
                         }
                         echo"<tr>" ;
-                            echo "<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>";
+                            echo "<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>";
 
                             echo "<td> $ordertotal</td>";
                         echo "</tr>";
@@ -100,9 +120,9 @@ session_unset();
                 echo "<div class='cartButtons'>
             <form  action='' method='post' > 
         <button type='submit' class=\"css3button\" name='ClearCart' value=".$itemID .">Empty Cart</button></form> ";
-               /* echo "<form  action='Payment.php' method='post' >
+                echo "<form  action='Payment.php' method='post' >
         <button type='submit' class=\"css3button\" name='Payment' value=".$itemID .">Process Transaction</button></form></div> ";
-            */}
+            }
             else{
                 echo"<h3>Your Shopping Cart is empty.</h3>";
             }
