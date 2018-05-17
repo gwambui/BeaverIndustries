@@ -85,20 +85,15 @@ class SqlObjFilter
     /******calculate order subtotals and total******/
     function OrderSubTotals(){
 
+
         for ($i =0; $i<count($this->arr); $i++)
         {
             $this->arr[$i]['SubTotal']= $this->arr[$i]['Price'] * $this->arr[$i]['Pieces'];
         }
-        /*foreach ($this->arr as $item){
-
-            $item["SubTotal"] = $item['Pieces'] * $item['Price'];
-            //$myarr["Pieces"] = $_POST["pieces"];
-            //echo $item['Price'].$item['Pieces']. $item['SubTotal'];
-var_dump($this->arr);
-        }*/
 
         return $this->arr;
     }
+    /*********************Calculate total of each order*/
     function OrderTotal(){
         $total=0;
         foreach ($this->arr as $item){
@@ -106,6 +101,41 @@ var_dump($this->arr);
         }
 
         return $total;
+    }
+    /*************Add Item to cart***********/
+    function AddToCart(){
+
+        If (!isset($_SESSION["cart"])) {
+
+            $_SESSION["cart"][] = $this->arr;
+
+        }elseif($this->ProductInCart()){
+            echo "Item has been added to Shopping Cart";
+        }
+        else{
+            $_SESSION["cart"][] = $this->arr;
+        }
+
+
+    }
+    function ProductInCart(){
+        $test = true;
+        for ($i = 0; $i < count($_SESSION["cart"]); $i++)
+        {
+            //($_SESSION["cart"] as $item => $value){
+
+            if($this->arr["ProductID"] === $_SESSION["cart"][$i]["ProductID"])
+            {
+                $_SESSION["cart"][$i]["Pieces"] += $this->arr["Pieces"];
+                $test = true;
+                break;
+            }
+            else
+            {
+               $test= false;
+            }
+        }
+        return $test;
     }
 }
 

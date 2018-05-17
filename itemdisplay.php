@@ -74,18 +74,11 @@ $obj = $pba->SingleObject($var_value);
                 {
                     $myarr= $obj[0];
                     $myarr["Pieces"] = $_POST["pieces"];
-                  //$obj[0]["Pieces"] = $_POST["pieces"];
 
+                    $addItem = new SqlObjFilter($myarr);
+                    $addItem->AddToCart();
 
-
-                    $_SESSION["cart"][]=$myarr;
-                      /*["ID"=>$_POST["ID"], "Pieces"=> $_POST["pieces"]];*/
-
-                    //var_dump($myarr);
-                    /* $_SESSION["cart"] += ;
-                    $_SESSION["cart"] += ["Details" => $_POST['pieces']];,$value['ProductID']*/
-                    $myarr= array();
-                }
+                }$myarr= array();
                 ?>
 
 

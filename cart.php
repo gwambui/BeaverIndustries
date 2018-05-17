@@ -18,6 +18,15 @@ include("shared/header.php");
 include ("shared/navmenu.php");
 
 
+
+if(isset($_POST['ClearCart']))
+{
+    session_unset();
+    session_destroy();
+    session_write_close();
+}
+
+
 /*var_dump($_SESSION['cart']);
 
 session_unset();
@@ -88,11 +97,21 @@ session_unset();
                             echo "<td> $ordertotal</td>";
                         echo "</tr>";
                     echo "</table>";
-                }
+                echo "<div class='cartButtons'>
+            <form  action='' method='post' > 
+        <button type='submit' class=\"css3button\" name='ClearCart' value=".$itemID .">Empty Cart</button></form> ";
+               /* echo "<form  action='Payment.php' method='post' >
+        <button type='submit' class=\"css3button\" name='Payment' value=".$itemID .">Process Transaction</button></form></div> ";
+            */}
+            else{
+                echo"<h3>Your Shopping Cart is empty.</h3>";
+            }
                 ?>
+
         </section>
     </div>
 </div>
 
-<?php //var_dump($_SESSION['cart']) ;
-?>
+
+
+<?php include("shared/footer.php"); ?>
