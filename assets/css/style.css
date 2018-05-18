@@ -717,7 +717,6 @@ header #contact {
 .order tr{    }
 .order td{
     text-align: center;
-
     border-bottom: 1px dashed #96a9b5;
 
 }
@@ -803,6 +802,12 @@ header #contact {
         font-size: 1.1em;
         color:  #474f51;
     }
+    #hoverbox {
+        top: 130px !important;
+
+
+    }
+
 }
 
 
@@ -899,25 +904,25 @@ header #contact {
     #header #contact a{
         display: inline-block;
         font-size: 1.2em;
-        font-weight: 200;}
-    #header nav {
-
-        position: relative;
-        text-align: right;
-        float:right;
-        top: 0px;
         font-weight: 200;
-        padding-bottom: 10px;
     }
+    #header nav {
+        float:right;
+        top: 0;
+        padding-bottom: 10px;
+        vertical-align: center;
 
-
+}
     #header nav a {
         font-size: 1.2em;
-        margin-right: 0;
+        margin-left: 0;
         padding: 0;
     }
+
     #header nav a:last-child {
+        margin-right: 0;
     }
+
 
     #hoverbox {
         top: 120px;
