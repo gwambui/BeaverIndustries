@@ -1,52 +1,37 @@
 <?php
 
 include("shared/header.php");
-/**
- * Created by PhpStorm.
- * User: wambu
- * Date: 2018-05-03
- * Time: 1:02 PM
- */
 
 ?>
 
-
     <!-- Header -->
-<?php
-
+<?php if(isset($_POST['ClearCart']))
+{
+session_unset();
+session_destroy();
+session_write_close();
+}
 
 include ("shared/navmenu.php");
 
 
 
-if(isset($_POST['ClearCart']))
-{
-    session_unset();
-    session_destroy();
-    session_write_close();
-}
-
-if(isset($_POST['RemoveItem']))
+/*if(isset($_POST['RemoveItem']))
 {
     $obj =  $pba->SingleObject($_POST['RemoveItem']);
     $myarr =$obj[0];
-   $removeItem = new SqlObjFilter($myarr);
-   $removeItem->RemoveFromCart();
+    $removeItem = new SqlObjFilter($myarr);
+    $removeItem->RemoveFromCart();
 
-   if(count($_SESSION["cart"])==0){
-       session_unset();
-       session_destroy();
-       session_write_close();
-   }
+    if(count($_SESSION["cart"])==0){
+        session_unset();
+        session_destroy();
+        session_write_close();
+    }
 
-}
+}*/
 
 
-/*var_dump($_SESSION['cart']);
-
-session_unset();
- session_destroy();
-    session_write_close();*/
 
 ?>
 
@@ -70,7 +55,7 @@ session_unset();
                         foreach ($order[0] as $item => $value) {
                             echo "<th>$item</th>";
                         }*/
-                        echo "<th>ProductID</th>";
+                        echo "<th>ID</th>";
                         echo "<th>Image</th>";
                         echo "<th>Name</th>";
                         echo "<th>Detail</th>";
@@ -103,7 +88,7 @@ session_unset();
                             echo "<td> $value[Pieces]</td>";
                             echo "<td><form  action='' method='post' ><button type='submit' 
                             class=\"css3button\" name='RemoveItem' value=".$value['ProductID']."> 
-                            RemoveItem </button></form></td>";
+                            Remove </button></form></td>";
                             echo "<td> $subtotal</td>";
 
                             /*foreach ($value as $data){
@@ -112,7 +97,7 @@ session_unset();
                                  }*/echo "</tr>";
                         }
                         echo"<tr>" ;
-                            echo "<td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>";
+                            echo "<td>Total</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td>";
 
                             echo "<td> $ordertotal</td>";
                         echo "</tr>";
@@ -120,8 +105,8 @@ session_unset();
                 echo "<div class='cartButtons'>
             <form  action='' method='post' > 
         <button type='submit' class=\"css3button\" name='ClearCart' value=".$itemID .">Empty Cart</button></form> ";
-                echo "<form  action='Payment.php' method='post' >
-        <button type='submit' class=\"css3button\" name='Payment' value=".$itemID .">Process Transaction</button></form></div> ";
+                echo "<form  action='checkout.php' method='post' >
+        <button type='submit' class=\"css3button\" name='Payment' value=".$itemID .">Check Out</button></form></div> ";
             }
             else{
                 echo"<h3>Your Shopping Cart is empty.</h3>";

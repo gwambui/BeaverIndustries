@@ -4,7 +4,7 @@ $cookie_value = "beaverpages";
 if(!isset($_COOKIE)){setcookie($cookie_name, $cookie_value, time() + (86400 * 60), "/");}
 
 //session
-session_start();
+if(!isset($_SESSION)){session_start();}
 
 
 ?>
@@ -50,7 +50,8 @@ session_start();
         <link href="https://fonts.googleapis.com/css?family=Lobster|Yanone+Kaffeesatz:200,300,400" rel="stylesheet">
         <link rel="icon" type="image/svg" href=".\assets\Images\beaver-logo.svg"/>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/style.css" />
        <!-- <link rel="stylesheet" href="assets/css/content.css" />-->
 

@@ -29,8 +29,7 @@ let NavigatorDrop = function ($hoverbox) {
         //console.log(value);
         if(value === "#navHome"){ $hoverbox.css("left", navpos.left + pos.left -30 ).fadeIn(500);}
         else{$hoverbox.css("left", navpos.left + pos.left ).fadeIn(500);
-        console.log(navpos.left+', '+ pos.right);
-            //$hoverbox.css("right", pos.right).fadeIn(500);
+
             }
 
     };
@@ -39,7 +38,7 @@ let NavigatorDrop = function ($hoverbox) {
 };
 
 $(navDropdown);
-
+$(cartPreview);
 
 function navDropdown() {
     let opt;
@@ -49,11 +48,11 @@ function navDropdown() {
         navdrop.setVars();
     });
 
-    $("nav").hover(function () { //navdrop.setTrackN();
+    $("nav").hover(function () {
     }, function () {
 
 
-        /*************************************/
+        /**********************Remove nav drop down ***************/
         $("#hoverbox").hover(function () {}, function () {navdrop.hideHover();});
         /* ************************************/
 
@@ -159,9 +158,26 @@ function navDropdown() {
         navdrop.showHoverBox(opt);
     });
 
+    /***************Toggle filter menu on mobile view*******************/
     $(".tag").click(function () {
         $(".topfilter").toggle(1000);
 
+    });
+
+    /*************detect the width of the display window*********************/
+    let windowsize = $(window).width();
+
+    /*$(window).resize(function() {
+        let windowsize = $(window).width();
+    });*/
+
+    /********************Toggle shopping cart preview on mouse over cart*********/
+    $('.cart').mouseover(function () {
+        $('.cartpreview').toggle(1000);
+        if(windowsize > 440)
+        {
+
+        }
     });
 
     /*$("#navKitchen").mouseover(function(){
@@ -199,3 +215,6 @@ function navDropdown() {
     */
 }
 
+function cartPreview() {
+
+}

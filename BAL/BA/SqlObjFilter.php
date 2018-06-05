@@ -110,7 +110,7 @@ class SqlObjFilter
             $_SESSION["cart"][] = $this->arr;
 
         }elseif($this->ProductInCart()){
-            echo "Item has been added to Shopping Cart";
+            //echo "Item has been added to Shopping Cart";
         }
         else{
             $_SESSION["cart"][] = $this->arr;
@@ -138,6 +138,7 @@ class SqlObjFilter
         return $test;
     }
     function RemoveFromCart(){
+
         for ($i = 0; $i < count($_SESSION["cart"]); $i++) {
             //($_SESSION["cart"] as $item => $value){
 
@@ -151,6 +152,11 @@ class SqlObjFilter
             }
         }
     }
+
+
+
+
+
 }
 
 

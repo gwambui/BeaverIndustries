@@ -25,7 +25,7 @@ h1{
 }
 
 h2,h3,p, footer, section, option, label,select, nav,  div,
-img,form,ol, ul, li,tr, th, td,p,header,img, input{
+img,form,ol, ul, li, th ,p,header,img, input{
     color: #474f51;
     margin: 0;
     padding: 0;
@@ -56,7 +56,7 @@ a
 }
 a:hover
 {
-    /*text-decoration: underline;*/
+    text-decoration:none;
 }
 a:visited{
     text-decoration: none;
@@ -293,7 +293,7 @@ header #contact {
 #header #contact a {
     color: #c6c8c8;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 0.8em;
     position: relative;
 
 }
@@ -323,7 +323,7 @@ header #contact {
     line-height: 1.75em;
 }
 #header nav a {
-    padding: 0 0 0 1%;
+
     color: #c6c8c8;
     font-size: 1em;
     margin: 0 auto;
@@ -331,7 +331,7 @@ header #contact {
 }
 #header nav a:hover , #header #contact a:hover{
     color: #f6f8f8;
-  /*  color: #8f8586;*/
+
 
 }
 #hoverbox {
@@ -481,11 +481,20 @@ header #contact {
 }
 #content .topbar{
      width: 100%;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
  }
-#tag{float: left; cursor: pointer; height:10px;
+#tag{
+    float: left;
+    cursor: pointer;
+    height:20px;
+    line-height: 20px;
+    padding-top: 8px ;
+
+
 }
 .tag{padding-bottom: 0;line-height: 10px;}
+/***************filter checklist disabled in mobile view. enabled on touch(does not affect desktop) ****************/
 .topbar .filter{
     margin: auto; padding:0 10px;
     overflow: auto;
@@ -497,14 +506,21 @@ header #contact {
     position: absolute;
     opacity: 0.9;
     background-color: #e5e5e5;
-    top:430px
+    top:400px;
+
+
+}
+.topbar button{
+    line-height: 16px;
+    font-size: 16px;
+    float: right;
 
 }
 #content .css3button{padding:5px; font-size:12px; right:50px;  }
 #content .topbar .price{
     float: left;
-    width: 15%;
-    padding:0 20px;
+    width: 30%;
+    padding:0 10px;
     margin:1px !important;
     display: block;
 
@@ -590,12 +606,12 @@ header #contact {
     padding-left: 35px;
     margin-bottom: 10px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    padding-bottom: 5px;
+
     line-height: 20px;
 }
 
@@ -640,10 +656,10 @@ header #contact {
 
 /* Style the checkmark/indicator */
 .container .checkmark:after {
-    left: 6px;
-    top: 3px;
-    width: 4px;
-    height: 8px;
+    left: 8px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
     border: solid white;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
@@ -691,12 +707,13 @@ header #contact {
 
 }
 
+
 /**********Product display grid page Adding to cart***************/
 .addCart{
     padding-bottom: 30px;
-   
+
 }
-.addCart input{
+.addCart input {
     height:24px;
     float: left;
     border: 1px solid #a2b5c1;
@@ -711,31 +728,86 @@ header #contact {
 .order th{
     width:12%;
     font-weight: bold;
-    border-bottom: 1px dashed #25b555;
+    border-bottom: 1px dashed #a2b5c1;
+    text-align: center;
 
 }
-.order tr{    }
+.order tr{  height: 40px;  }
+.order tr:last-child{
+    font-weight: bold;
+}
 .order td{
     text-align: center;
     border-bottom: 1px dashed #96a9b5;
+    font-size: 14px;
+    line-height:12px;
 
+}
+.order button{
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
 .cartButtons{
 
     margin: 30px auto ;
-    padding:10px;display: flex;
+    padding:5px;
+    display: flex;
     justify-content: right;
     position: relative;
+
 }
 .cartButtons button{
 
-    padding:10px;
+    padding:4px;
     margin: 0 30px;
-
+    line-height:14px;
+    border: solid 2px;
 }
 .cartButtons button:last-child
 {
     float: right;
+}
+/*******************Hover on shopping cart on header**********/
+
+.cartpreview{
+    z-index: 5;
+    width: 30%;
+    border: solid 1px #546b76;
+    padding:5px;
+    right: 10%;
+    position: absolute;
+    background-color: #eeeeee;
+    display: none;
+}
+.cartpreview img{
+   max-width:30px ;
+    height: 40px!important;
+}
+.cartpreview .order th
+{
+
+}
+/********login page style*************/
+.login{
+    float: left;
+
+    margin: 10px;
+
+}
+.login label,.login input{margin: 8px; }
+.login input{
+
+
+    border: 1px solid #a2b5c1;
+    border-radius: 5px;
+}
+.login button{
+    margin: 10px;
+    border:solid 4px;
+    padding: 8px;
+    line-height: 24px;
+    font-size: 18px;
 }
 /************** Footer **************/
 #footer {
@@ -785,7 +857,7 @@ header #contact {
 
     }
     #header nav a, #header #contact a {
-        font-size: 1em !important;
+        font-size: 0.8em !important;
 
 
     }
@@ -803,10 +875,15 @@ header #contact {
         color:  #474f51;
     }
     #hoverbox {
-        top: 130px !important;
+        top: 135px !important;
 
 
     }
+
+
+
+
+
 
 }
 
@@ -896,15 +973,16 @@ header #contact {
     }
     #header #contact  {
         text-align: right;
-        padding-left: 80%;
+        padding-left: 70%;
         padding-bottom: 20px;
 
 
     }
     #header #contact a{
         display: inline-block;
-        font-size: 1.2em;
-        font-weight: 200;
+        font-size: 0.8em;
+        font-weight: 300;
+
     }
     #header nav {
         float:right;
@@ -934,7 +1012,10 @@ header #contact {
         height: auto;
 
     }
-
+    #banner button{
+        line-height:20px;
+        font-size: 20px !important;
+    }
     #banner p {
         font-size: 1.4em;
         font-weight: 200;
@@ -996,7 +1077,42 @@ header #contact {
 
         height:130px;
        }
+    /***************filter div similar to side bar used for mobile: position top***********************/
     .topbar{display: none;}
+    /**************************Order page styling********************************/
+
+    .order th{
+        font-size: 20px;
+
+    }
+    .order tr{  height: 50px;  }
+
+    .order td{
+        font-size: 18px;
+        line-height:18px;
+
+    }
+    .order button{
+        border: solid 2px;
+    }
+    button{
+        line-height:18px;
+        font-size: 16px !important;
+    }
+    .cartButtons{
+
+        margin: 30px auto ;
+        padding:10px;
+
+
+    }
+    .cartButtons button{
+
+        padding:15px;
+        line-height:20px;
+        border: solid 3px;
+    }
+
 
     /************** Footer **************/
     #footer section div  {

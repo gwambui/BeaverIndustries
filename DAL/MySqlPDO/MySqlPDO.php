@@ -345,7 +345,9 @@
             $rows = $this->GetArrayList($sql, $bind, $pdoOptions);
 
             if ( empty($rows) ) {
+
                 return array();
+
             }
 
             return current($rows);

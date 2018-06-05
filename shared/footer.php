@@ -43,10 +43,10 @@
                     </ul>
                 </div>
                 <div>
-                    <h2>Home decor & Materials</h2>
+                    <h2>Decor & Materials</h2>
                     <ul class="link-list last-child">
                         <li>Doors, door frames</li>
-                        <li>floors, stairs,railing</li>
+                        <li>Floors, stairs, railing</li>
                         <li>Door Locks, handles</li>
                         <li>Curtain rods, shoe racks</li>
                         <li>Mahogany, Cypress, Cedar etc</li>

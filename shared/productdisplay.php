@@ -2,17 +2,37 @@
 
 /*
  * User entered options added to array - $filterOptions
- */
+
+if(!empty($_POST['pieces']))
+{
+
+
+    $oneObj = $pba->SingleObject($_POST['ID']);
+
+
+    $myarr= $oneObj[0];
+    $myarr["Pieces"] = $_POST["pieces"];
+    //var_dump($myarr);
+    $addItem = new SqlObjFilter($myarr);
+    $addItem->AddToCart();
+
+    session_write_close();
+
+    $myarr= array();
+} */
 if(!empty($filterOptions)) {
     $filt = new SqlObjFilter($obj);
     $obj = $filt->FilterInput($filterOptions);
+
 }
+
 
 $count = 0;
 if (count($obj) > 0)
 {
 
-    echo "<table class='table table-striped'>";
+
+    echo "<table class='table '>";
     echo "<tr>";
 
     //var_dump(array($value));<a href='itemdisplay.php'   target='_blank'  > </a>
@@ -55,23 +75,7 @@ if (count($obj) > 0)
     echo "</table>";
 
 
-                if(!empty($_POST['pieces']))
-                {
 
-
-                    $obj = $pba->SingleObject($_POST['ID']);
-
-
-                    $myarr= $obj[0];
-                    $myarr["Pieces"] = $_POST["pieces"];
-                    //var_dump($myarr);
-                    $addItem = new SqlObjFilter($myarr);
-                    $addItem->AddToCart();
-
-                   // $_SESSION["cart"][]=$myarr;
-
-
-                }$myarr= array();
 
 
 

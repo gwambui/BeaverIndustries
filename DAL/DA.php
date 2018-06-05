@@ -2,9 +2,12 @@
 
 require_once 'DA/BaseDA.php';
 require_once 'DA/ProductDA.php';
-
+require_once 'DA/UserDA.php';
+require_once 'DA/ClientDA.php';
 require_once 'MySqlPDO/MySqlPDO.php';
 require_once 'DbSettings.php';
+require_once 'DA/RecoveryQDA.php';
+
 
 
 function getDBInstance()

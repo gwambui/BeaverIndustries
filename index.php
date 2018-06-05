@@ -9,7 +9,7 @@ include("shared/header.php");
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 <!-- Header -->
@@ -150,12 +150,10 @@ include ("shared/navmenu.php")
                 <h2>Our customer corner</h2>
                 <h3>Drop us a line on facebook</h3>
             </header>
-            <div class="fb-page" data-href="https://www.facebook.com/BeavertimberCo/"
-                 data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
-                 data-hide-cover="false" data-show-facepile="true"><blockquote
-                        cite="https://www.facebook.com/BeavertimberCo/" class="fb-xfbml-parse-ignore">
-                    <a href="https://www.facebook.com/BeavertimberCo/">Beaver Timber</a></blockquote>
-            </div>
+            <div class="fb-page" data-href="https://www.facebook.com/BeavertimberCo/" data-tabs="timeline"
+                 data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                 data-show-facepile="true"><blockquote cite="https://www.facebook.com/BeavertimberCo/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/BeavertimberCo/ ">Beaver Timber</a></blockquote></div>
 
         </section>
 

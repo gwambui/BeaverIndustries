@@ -18,13 +18,15 @@ include ("shared/navmenu.php");
 
 $var_value = $_POST['ID'];
 $obj = $pba->SingleObject($var_value);
-
+/********clear previous add to cart*****/
+unset($_POST['pieces']);
 ?>
 
 <div id="content-wrapper">
     <div id="content">
 
             <section>
+                <?php var_dump($obj);?>
                 <div class="secondaryImg">
                     <?php
                         foreach ($obj as $item => $value){
@@ -60,7 +62,7 @@ $obj = $pba->SingleObject($var_value);
                     ?><!--?action=add&code=--><?php /*echo $value['ProductID']*/?>
                     <form method="post" action=""  >
                     <label>Add to Cart
-                    <input class="input"  type="number" min="1" name="pieces" >
+                    <input class="input"  type="number" min="0" name="pieces" >
                         <button type="submit" name='ID' value="<?php echo $value['ProductID'] ?>" class="css3button">Add</button>
                     </label>
                     </form>
