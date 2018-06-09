@@ -16,11 +16,11 @@ $post = $_SERVER['REQUEST_METHOD'] == 'POST'  ? true : false;
         <section>
             <div class=" login col-12">
 
-<?php
+<?php /*
 
 // define variables and set to empty values
 if(isset($_POST['userLogin'])){
-                /*Client add variables*/
+                /*Client add variables
              $userLogin = htmlspecialchars($_POST['userLogin']);
              $firstName = htmlspecialchars($_POST['firstName']);
              $lastName = htmlspecialchars($_POST['lastName']);
@@ -107,7 +107,7 @@ if(isset($_POST['userLogin'])){
  }
 ?>
             </div>
-
+*/?>
             <div class="clr"></div>
         </section>
     </div>

@@ -29,6 +29,8 @@ include ("shared/navmenu.php");
     <div id="content">
         <section>
         <div class=" login col-6">
+            <h2>This page is under construction.</h2>
+           <?php /*
             <h2>Returning Customer?</h2>
             <h3>Please Sign In</h3>
             <form class="col-6" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> method='post'>
@@ -39,15 +41,15 @@ include ("shared/navmenu.php");
                 <label for="inputPassword" >Password
                 <input type="password" placeholder="passsword"
                        size="40" name="password" required><br></label>
-                <button type="submit" class="css3button">SIGN IN</button>
+                <button type="submit" class="css3button">SIGN IN</button>?>
                 <?php if ($post) { ?>
                     <br>
-                    <div class=""><?php echo "<b>&nbsp;" . $error . "</b>"; ?>
+                    <div class=""><?php echo "<b>&nbsp;" . $error . "</b>";
                     </div>
 
                 <?php }?>
 
-            </form>
+            </form>*/?>
         </div>
         <div class="login col-6">
             <h2>New to Beaver online?</h2>
