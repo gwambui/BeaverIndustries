@@ -49,7 +49,7 @@ include ("shared/navmenu.php");
 
                 <?php }?>
 
-            </form>*/?>
+            </form>
         </div>
         <div class="login col-6">
             <h2>New to Beaver online?</h2>
@@ -58,7 +58,7 @@ include ("shared/navmenu.php");
 
                 <button type="submit" class="css3button">START REGISTRATION</button>
 
-            </form>
+            </form>*/?>
         </div>
             <div class="clr"></div>
         </section>

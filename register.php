@@ -105,9 +105,9 @@ if(isset($_POST['userLogin'])){
     $populate =true;
      include("shared/registration.php");
  }
-?>
+?>*/?>
             </div>
-*/?>
+
             <div class="clr"></div>
         </section>
     </div>
