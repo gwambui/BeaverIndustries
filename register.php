@@ -2,19 +2,19 @@
 include("shared/header.php");
 
 include ("shared/navmenu.php");
-$post = $_SERVER['REQUEST_METHOD'] == 'POST' ? true : false;
+
 $rba = new RecoveryQBA();
 $RecQuestions = $rba->GetRecQuestions();
 
 $recQID = empty($_POST['RecQuestionsID']) ? "What primary school did you attend?" : $_POST['RecQuestionsID'];
 
-$post = $_SERVER['REQUEST_METHOD'] == 'POST' ? true : false;
+$post = $_SERVER['REQUEST_METHOD'] == 'POST'  ? true : false;
 
 ?>
 <div id="content-wrapper">
     <div id="content">
         <section>
-            <div class=" login col-10">
+            <div class=" login col-12">
 
 <?php
 
@@ -45,42 +45,68 @@ if(isset($_POST['userLogin'])){
                  "country"=>$country , "poBox"=>$poBox ,"postalCode"=>$postalCode ,
                  "RecQuestion1"=>$RecQuestion1 ,"Answer1"=>$Answer1 ,
                  "RecQuestion2"=>$RecQuestion2 , "Answer2"=>$Answer2 );
-              $regInfo = new WorkFunctions($registration);
-                $verify = $regInfo->Testinput();
+             $regInfo = new WorkFunctions($registration);
+             $verify = $regInfo->Testinput();
 
             if(!$verify){
-                echo "<p>Thank you, Registration is Complete";?><br>
+                echo "<p style=\"text-align:center\">Thank you, Registration is Complete";?><br>
                 <?php echo"An Email confirmation will be sent shortly.</p>";
-             $cba = new ClientBA();
-             $uba= new UserBA();
-
-
-             $clientDTO = new ClientAddDTO(
+                $cba = new ClientBA();
+                $uba= new UserBA();
+                $clientDTO = new ClientAddDTO(
                      null, null, 4, $userLogin,
-                    $firstName, $lastName,$birthdate, $email, $password,
+                     $firstName, $lastName,$birthdate, $email, $password,
                      $phoneNumber, $address, $city, $country,
                      $poBox, $postalCode, $RecQuestion1,
                      $Answer1, $RecQuestion2, $Answer2);
+                $clientID = $cba->AddClient($clientDTO);
+
+            // SEND CONFIRMATION EMAIL
+
+                // Please specify your Mail Server - Example: mail.example.com.
+                //ini_set("SMTP","mail.beaverindustries.co.ke");
+
+            // Please specify an SMTP Number 25 and 8889 are valid SMTP Ports.
+               //ini_set("smtp_port","26");
+
+                // Please specify the return address to use
+                //ini_set('sendmail_from', 'register@beaverindustries.co.ke');
 
 
-            // if(email successfully verified){}
-                 $clientID = $cba->AddClient($clientDTO);
+
+                    // the message
+                    $msg = "Hello ".$firstName."Thank you for opening an account on Beaver Industries
+                            \n Please take note of your account information which you will need to access
+                            Beaver online in future. UserName:".$userLogin." If you would like to modify your 
+                            account, please visit beaverindustries.co.ke/account. ";
+
+                    // use wordwrap() if lines are longer than 70 characters
+                    $msg = wordwrap($msg,70);
+                    $headers = "From:beaver@beaverindustries.co.ke" . "\r\n" .
+                        "CC: beaver@beaverindustries.co.ke";
+                    // send email
+                    mail("wambuiwangotha@gmail.com","Welcome to Beaver Online",
+                        "Welcome to beaver Online", "From:beaver@beaverindustries.co.ke" . "\r\n" .
+                        "CC: beaver@beaverindustries.co.ke");
+
 
             }
-            else{var_dump($verify);
-                /*foreach ($verify as $value)
+            else{//var_dump($verify);
+                $populate = false;
+                foreach ($verify as $value)
                 {
-                    echo $value;
-                }*/
+                    echo $value. "<br>";
+                }
                 include("shared/registration.php");
             }
+            unset($_POST);
  }
  else {
+    $populate =true;
      include("shared/registration.php");
  }
 ?>
             </div>
-
 
             <div class="clr"></div>
         </section>
@@ -89,6 +115,5 @@ if(isset($_POST['userLogin'])){
 
 </div>
 <?php
-
 
 include("shared/footer.php");

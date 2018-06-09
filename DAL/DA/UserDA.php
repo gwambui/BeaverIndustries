@@ -19,7 +19,7 @@ class UserDA extends BaseDA
     {
         $bindParms = array('ID'=>$id);
 
-        return $this->db->GetArray("call UR_FindUser(:ID)",$bindParms);
+        return $this->db->GetArray("select * from UR_User where UserID = :ID;",$bindParms);
     }
 
    public function GetUserType($userTypeCode)

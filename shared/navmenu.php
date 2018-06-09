@@ -6,7 +6,7 @@
 
 require_once 'BAL/BA.php';
 $pba = new ProductBA();
-
+$post = $_SERVER['REQUEST_METHOD'] == 'POST' ? true : false;
 $mainselect = null;
 $subselect = null;
 $filterOptions = array();
@@ -49,7 +49,27 @@ if(isset($_POST['RemoveItem']))
 <div id="header-wrapper" >
 
     <header id="header" >
-        <div id = "contact"><a href="login.php">Sign In&nbsp;|&nbsp;</a><a href="login.php">Account&nbsp;|&nbsp;</a>
+
+        <div id = "contact">
+            <?php
+                if (isset($_SESSION['user']))
+                {
+
+                    echo "<a> Hi ".$_SESSION['user']['FirstName']."! &nbsp;</a>";
+                    echo "<a href=\"logout.php\">Sign Out |&nbsp;</a>";
+                }
+                else{
+                    echo "<a href=\"login.php\">Sign In&nbsp;|&nbsp;</a>";
+                }
+
+            ?>
+
+
+
+            <a href="login.php">Account&nbsp;|&nbsp;</a>
+
+
+
             <a href="cart.php"><span class="cart glyphicon glyphicon-shopping-cart"></span>&nbsp;|&nbsp;</a><a href="contact.php">Contact Us</a></div>
         <div class="cartpreview"> <?php include 'shared/carttable.php'?></div>
 

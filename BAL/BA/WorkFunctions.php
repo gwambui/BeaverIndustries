@@ -18,14 +18,14 @@ class WorkFunctions
         $this->arr = $input;
     }
 
-    public function IsEmpty($item)
+    public function IsEmpty($item, $value)
     {
-        if(empty($item)){
-            $this->Errlog= $item." cannot be void";
+        if(empty($value)){
+            array_push($this->Errlog,$item." cannot be void");
 
         }
-        elseif (!preg_match("/^[a-zA-Z0-9]*$/",$item)){
-            $this->Errlog= "Only letters and white space allowed in ". $item;
+        elseif (!preg_match("/^[0-9a-zA-Z ]*$/",$value)){
+            array_push($this->Errlog,"Only letters and white space allowed in ". $item );
 
         }
 
@@ -38,17 +38,18 @@ class WorkFunctions
 
             if($item == 'email'){
                 if (!filter_var($value, FILTER_VALIDATE_EMAIL)) {
-                    $this->Errlog= "Invalid email format";
+                    array_push($this->Errlog, "Invalid email format") ;
 
                 }
             }
             else if($item =='birthdate') {
                 if(empty($item)){
-                    $this->Errlog= $item." cannot be void";
+                    array_push($this->Errlog,$item." cannot be void" ) ;
 
                 }
             }
-            else{$this->IsEmpty($value);}
+            else{
+                $this->IsEmpty($item, $value);}
 
         }
         /*var_dump($this->Errlog);*/

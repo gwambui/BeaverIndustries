@@ -4,12 +4,12 @@
 
                 <h2>Register for an account</h2>
                 <h3>Please provide the requested information. *Indicates required fields </h3>
-                <form class="col-11" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> method='post'>
+                <form class="col-12" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> method='post'>
                     <label for="inputName" >*User Name
-                    <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
-                            type="text" placeholder="User Name" size="30" name="userLogin" required autofocus><br></label>
+                    <input type="text" placeholder="User Name" size="30" name="userLogin" required autofocus
+                        <?php echo !$post ? "disabled='disabled'" : "" ."value =\"" .!$populate ? "" : $userLogin ."\""?>><br></label>
                     <label for="inputFName" >*First Name
-                    <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
+                    <input <?php echo !$post ? "disabled='disabled'" : "";  ?>
                             type="text" placeholder="First Name" size="30" name="firstName" required><br></label>
                     <label for="inputLName" >*Last Name
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
@@ -83,7 +83,8 @@
                             echo "<option " . ($isSelected ? "selected" : "") .  " value=" . $value['QuestionID']  . ">" . $value['Question'] . "</option>";
 
                         } ?>
-                    </select></label>
+                        </select>
+                    </label>
 
                     <label for="inputAnswer2" >Answer
                         <input <?php echo !$post ? "disabled='disabled'" : ""; ?>

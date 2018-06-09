@@ -34,6 +34,9 @@ class ClientBA extends BaseBA
             $client->Address = $this->uda->AddAddress($client);
             $client->ClientID = $this->cda->AddClient($client);
 
+
+            $user = $this->uda->GetUserByID($client->userID); //strcmp
+            $_SESSION['user'] = $user;
             return $client->ClientID;
         } catch (PDOException $pex) {
             throw new PDOException($pex);
