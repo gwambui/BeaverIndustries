@@ -64,13 +64,13 @@ if(isset($_POST['userLogin'])){
             // SEND CONFIRMATION EMAIL
 
                 // Please specify your Mail Server - Example: mail.example.com.
-                //ini_set("SMTP","mail.beaverindustries.co.ke");
+                ini_set("SMTP","mail.beaverindustries.co.ke");
 
             // Please specify an SMTP Number 25 and 8889 are valid SMTP Ports.
-               //ini_set("smtp_port","26");
+               ini_set("smtp_port","26");
 
                 // Please specify the return address to use
-                //ini_set('sendmail_from', 'register@beaverindustries.co.ke');
+                ini_set('sendmail_from', 'register@beaverindustries.co.ke');
 
 
 
@@ -86,8 +86,8 @@ if(isset($_POST['userLogin'])){
                         "CC: beaver@beaverindustries.co.ke";
                     // send email
                     mail("wambuiwangotha@gmail.com","Welcome to Beaver Online",
-                        "Welcome to beaver Online", "From:beaver@beaverindustries.co.ke" . "\r\n" .
-                        "CC: beaver@beaverindustries.co.ke");
+                        "Welcome to beaver Online", "From:register@beaverindustries.co.ke" . "\r\n" .
+                        "CC: register@beaverindustries.co.ke");
 
 
             }

@@ -86,7 +86,7 @@
                         </select>
                     </label>
 
-                    <label for="inputAnswer2" >Answer
+                    <label for="inputAnswer2" >Answer2
                         <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
                                 type="text" placeholder="Answer"  name="answer2" required><br></label>
                     <button  type="submit" class="css3button">Register</button>
