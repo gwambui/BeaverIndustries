@@ -15,7 +15,7 @@ $post = $_SERVER['REQUEST_METHOD'] == 'POST'  ? true : false;
     <div id="content">
         <section>
             <div class=" login col-12">
-                <h2>This page is under construction.</h2>
+
 <?php
 
 // define variables and set to empty values
