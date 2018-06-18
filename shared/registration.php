@@ -7,7 +7,7 @@
                 <form class="col-12" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> method='post'>
                     <label for="inputName" >*User Name
                     <input type="text" placeholder="User Name" size="30" name="userLogin" required autofocus
-                        <?php echo !$post ? "disabled='disabled'" : "" ."value =\"" .!$populate ? "" : $userLogin ."\""?>><br></label>
+                        <?php echo !$post ? "disabled='disabled'" : "" ."value =\"" .!$populate ? "" : $userLogin ."\"";?>><br></label>
                     <label for="inputFName" >*First Name
                     <input <?php echo !$post ? "disabled='disabled'" : "";  ?>
                             type="text" placeholder="First Name" size="30" name="firstName" required><br></label>
@@ -17,21 +17,25 @@
                     <label for="inputEmail" >*Email
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
                             type="email" placeholder="Email" size="40" name="email" required><br></label>
-                    <label for="inputPassword" >*Password
-                    <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
-                            type="password" placeholder="passsword" size="30" name="password" required><br></label>
-                    <label for="inputPassword" >*Verify Password
-                    <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
-                            type="password" placeholder="passsword" size="30" name="password" required><br></label>
 
                     <label for="inputbirthday" >*Date of Birth
                         <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
                                 type="date" placeholder="date" size="30" name="birthdate" required><br></label>
 
                     <label for="inputphone" >*Phone Number
+                        <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
+                                type="tel" placeholder="000" size="30" name="phoneNumber" required><br></label>
+
+                    <label for="inputPassword" >*Password
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
-                            type="tel" placeholder="000" size="30" name="phoneNumber" required><br></label>
-                    <label for="inputAddress" >Address
+
+                            type="password" placeholder="passsword" size="30" name="password" required><br></label>
+                    <label for="inputPassword" >*Verify Password
+                    <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
+                            type="password" placeholder="passsword" size="30" name="password" required><br></label>
+
+
+                    <br><label for="inputAddress" >Address
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
                             type="text" placeholder="Address" size="30" name="address" required><br></label>
 
@@ -70,7 +74,7 @@
                     <label for="inputAnswer1" >Answer1
                         <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
                                 type="text" placeholder="Answer"  name="answer1" required><br></label>
-                    <label for ="recoveryQuestions"> Recovery Question2
+                    <br><label for ="recoveryQuestions"> Recovery Question2
                         <select class="form-control" name="question2" <?php echo !$post ? "disabled='disabled'" : ""; ?>>
                         <?php
                         foreach ($RecQuestions as $item => $value) {

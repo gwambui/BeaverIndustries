@@ -75,9 +75,9 @@ if(isset($_POST['userLogin'])){
 
 
                     // the message
-                    $msg = "Hello ".$firstName."Thank you for opening an account on Beaver Industries
-                            \n Please take note of your account information which you will need to access
-                            Beaver online in future. UserName:".$userLogin." If you would like to modify your 
+                    $msg = $firstName." Thank you for opening an account on Beaver Industries \n
+                            Please take note of your account information which you will need to access \n
+                            Beaver online in future. UserName:".$userLogin." If you would like to modify your \n
                             account, please visit beaverindustries.co.ke/account. ";
 
                     // use wordwrap() if lines are longer than 70 characters
@@ -86,7 +86,7 @@ if(isset($_POST['userLogin'])){
                         "CC: beaver@beaverindustries.co.ke";
                     // send email
                     mail($email,"Welcome to Beaver Online",
-                        "Dear".$firstName.$msg, "From:register@beaverindustries.co.ke" . "\r\n" .
+                        "Dear ".$msg, "From:register@beaverindustries.co.ke" . "\r\n" .
                         "CC: register@beaverindustries.co.ke");
 
 
