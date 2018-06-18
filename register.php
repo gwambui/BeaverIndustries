@@ -85,8 +85,8 @@ if(isset($_POST['userLogin'])){
                     $headers = "From:beaver@beaverindustries.co.ke" . "\r\n" .
                         "CC: beaver@beaverindustries.co.ke";
                     // send email
-                    mail("wambuiwangotha@gmail.com","Welcome to Beaver Online",
-                        "Welcome to beaver Online", "From:register@beaverindustries.co.ke" . "\r\n" .
+                    mail($email,"Welcome to Beaver Online",
+                        "Dear".$firstName.$msg, "From:register@beaverindustries.co.ke" . "\r\n" .
                         "CC: register@beaverindustries.co.ke");
 
 
