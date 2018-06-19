@@ -8,7 +8,7 @@
                 <form class="col-12" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> method='post'>
                     <label for="inputName" >*User Name
                     <input type="text" placeholder="User Name" size="30" name="userLogin" required autofocus
-                        <?php echo !$post ? "disabled='disabled'" : "" ."value =\"" .!$populate ? "" : $userLogin ."\"";?>><br></label>
+                        <?php echo !$post ? "disabled='disabled'" : "" ;?>><br></label>
                     <label for="inputFName" >*First Name
                     <input <?php echo !$post ? "disabled='disabled'" : "";  ?>
                             type="text" placeholder="First Name" size="30" name="firstName" required><br></label>
@@ -57,7 +57,6 @@
                     <label for="inputCity" >Postal Code
                         <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
                             type="text" placeholder="Postal Code" size="30" name="postalcode" required><br></label>
-
 
 
                     <label for="inputCity" >City
