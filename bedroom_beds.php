@@ -1,7 +1,3 @@
-
-
-
-<html>
 <?php
 include("shared/header.php");
 
@@ -35,12 +31,9 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
                     <h3>side bar sub heading</h3>
                 </header>
 
-                <ul class="check-list">
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                </ul>
+                <div>
+                    <img src=".\assets\Images\BedsCribsDeckers\beds.jpg"
+                </div>
             </section>
 
         </div>
@@ -66,6 +59,5 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
 
 <?php include("shared/footer.php"); ?>
 
-</body>
-</html>
+
 

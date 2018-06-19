@@ -1,7 +1,3 @@
-
-
-
-<html>
 <?php
 include("shared/header.php");
 
@@ -11,10 +7,20 @@ include("shared/header.php");
 
 <!-- Header -->
 <?php
-include ("shared/navmenu.php");
+
 
 $NavSelection = "Outdoor";
+include ("shared/navmenu.php");
+
+/*
+ * retrieve item details as sidebar options
+ */
+$itemLookup = $pba->GetDetails($NavSelection);
+/*
+ * retrieve main section items from DB
+ */
 $obj = $pba->GetMainProduct($NavSelection);
+
 ?>
 
 
@@ -33,12 +39,9 @@ $obj = $pba->GetMainProduct($NavSelection);
                     <h3>side bar sub heading</h3>
                 </header>
 
-                <ul class="check-list">
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                </ul>
+                <?php
+                include("shared/sidebar.php");
+                ?>
             </section>
 
         </div>
@@ -51,6 +54,8 @@ $obj = $pba->GetMainProduct($NavSelection);
                     <h3>Beaver values Customer Satisfaction</h3>
                 </header>
                 <?php
+                include ("shared/topbar.php");
+
                 include("shared/productdisplay.php");
                 ?>
 
@@ -63,8 +68,4 @@ $obj = $pba->GetMainProduct($NavSelection);
 
 
 <?php include("shared/footer.php"); ?>
-
-</body>
-</html>
-
 

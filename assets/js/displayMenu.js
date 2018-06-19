@@ -1,69 +1,70 @@
 
 
 
-var NavigatorDrop = function ($hoverbox) {
+let NavigatorDrop = function ($hoverbox) {
 
 
-    var nav = $("nav");
-    var navpos = nav.position();
-    var nav2 = $("#navDining");
-    var anchor  = nav2.position();
+    let nav = $("nav");
+    let navpos = nav.position();
+    let nav2 = $("#navDining");
+    let anchor  = nav2.position();
 
+    this.setVars = function(){
+         nav = $("nav");
+         navpos = nav.position();
+         nav2 = $("#navDining");
+         anchor  = nav2.position();
+    };
 
     this.hideHover = function () {
 
-        $hoverbox.css("display","none").fadeout(1000);
-
+        $hoverbox.css("display","none");
     };
 
     this.showHoverBox = function(value) {
-        var selector = $(value);
-        var pos = selector.position();
+        let selector = $(value);
+        let pos = selector.position();
 
         //$hoverbox.show();
-        $hoverbox.css("left", navpos.left + pos.left + anchor.left-20).fadeIn(500);
+        //console.log(value);
+        if(value === "#navHome"){ $hoverbox.css("left", navpos.left + pos.left -30 ).fadeIn(500);}
+        else{$hoverbox.css("left", navpos.left + pos.left ).fadeIn(500);
+
+            }
 
     };
 
 
 };
 
-$(fnc);
+$(navDropdown);
+$(cartPreview);
 
-function fnc() {
-    var opt;
-    var navdrop = new NavigatorDrop($('#hoverbox'));
+function navDropdown() {
+    let opt;
+    let navdrop = new NavigatorDrop($('#hoverbox'));
 
-    $("nav").hover(function () { //navdrop.setTrackN();
+    $( window ).resize(function() {
+        navdrop.setVars();
+    });
+
+    $("nav").hover(function () {
     }, function () {
 
 
-        /*************************************/
-        $("#hoverbox").hover(function () {//navdrop.resetTrackN();
-            navdrop.setTrackH();
-
-
-        }, function () {
-            //navdrop.resetTrackH();
-            navdrop.hideHover();
-        });
+        /**********************Remove nav drop down ***************/
+        $("#hoverbox").hover(function () {}, function () {navdrop.hideHover();});
         /* ************************************/
 
-
-        $("#contact").mouseenter(function () {//navdrop.resetTrackN();
-            navdrop.hideHover();
-        });
+        $("#contact").mouseenter(function () {navdrop.hideHover();});
 
 
-        $("#banner").mouseenter(function () {//navdrop.resetTrackN();
-            navdrop.hideHover();
-        });
+        $("#banner").mouseenter(function () {navdrop.hideHover();});
 
-        $("#content-wrapper").mouseenter(function () {//navdrop.resetTrackN();
-            navdrop.hideHover();
-        });
+        $("#content-wrapper").mouseenter(function () {navdrop.hideHover();});
 
     });
+
 
     $("#navLivingroom").mouseover(function () {
 
@@ -103,7 +104,7 @@ function fnc() {
             "<a href =bedroom_beds.php>" + "Beds" + "</a><br>" +
             "<a href =bedroom_chaise.php>" + "Chaise" + "</a><br>" +
             "<a href =bedroom_vanity.php>" + "Vanity" + "</a><br>" +
-            "<a href =Storage.php>" + "Storage" + "</a>");
+            "<a href =bedroom_storage.php>" + "Storage" + "</a>");
 
 
         navdrop.showHoverBox(opt);
@@ -157,6 +158,28 @@ function fnc() {
         navdrop.showHoverBox(opt);
     });
 
+    /***************Toggle filter menu on mobile view*******************/
+    $(".tag").click(function () {
+        $(".topfilter").toggle(1000);
+
+    });
+
+    /*************detect the width of the display window*********************/
+    let windowsize = $(window).width();
+
+    /*$(window).resize(function() {
+        let windowsize = $(window).width();
+    });*/
+
+    /********************Toggle shopping cart preview on mouse over cart*********/
+    $('.cart').mouseover(function () {
+        $('.cartpreview').toggle(1000);
+        if(windowsize > 440)
+        {
+
+        }
+    });
+
     /*$("#navKitchen").mouseover(function(){
             console.log("php");
             var opt = $(this).attr('name');
@@ -192,5 +215,6 @@ function fnc() {
     */
 }
 
+function cartPreview() {
 
-
+}

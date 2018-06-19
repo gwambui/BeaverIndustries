@@ -18,6 +18,8 @@ class ProductDA extends  BaseDA
     {
        $bindParms = array("Area"=>$area);
        $rows = $this->db->GetArrayList("call NavMain(:Area);", $bindParms);
+
+
        return $rows;
     }
     public function GetSubProduct($area, $callname)
@@ -26,5 +28,17 @@ class ProductDA extends  BaseDA
         $rows = $this->db->GetArrayList("call NavList(:Area, :Callname);", $bindParms);
         return $rows;
     }
+    public function GetDetails($area)
+    {
+        $bindParms = array("Area" => $area);
+        $rows = $this->db->GetArrayList("call AreaDetails(:Area);", $bindParms);
 
+        return $rows;
+    }
+    public function SingleObject($ID)
+    {
+        $bindParms = array("ID" => $ID);
+        $rows = $this->db->GetArrayList("call SingleObject(:ID);", $bindParms);
+        return $rows;
+    }
 }

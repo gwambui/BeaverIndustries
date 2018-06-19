@@ -1,14 +1,33 @@
 
 
-var InputData = function(){
 
-};
+$(filter);
+function filter(){
+
+    //var jsdata = new InputData();
+
+    /*$("input").click(function () {
+    }, function () {
+        $("input").attr("checked", "checked");
+
+        /!*************************************!/
+    });*/
 
 
-$(function (){
-    var jsdata = new InputData();
+
+}
+$(swapImage);
+function swapImage(){
+
+    $(".setimg").click(function () {
+
+        let elem = $(this).attr('src');
 
 
+        $("#largeimg").attr('src',elem);
 
 
-});
+    });
+
+}
+

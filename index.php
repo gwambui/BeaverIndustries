@@ -1,13 +1,7 @@
-
-
-
-<html>
 <?php
 include("shared/header.php");
 
 ?>
-
-
 
 
 <div id="fb-root"></div>
@@ -15,11 +9,12 @@ include("shared/header.php");
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 <!-- Header -->
 <?php
+
 include ("shared/navmenu.php")
 ?>
 
@@ -29,11 +24,11 @@ include ("shared/navmenu.php")
 <div id ="banner-wrapper">
     <div id="banner">
            <div id="textarea">
-                <!-- Banner Copy -->
+                <!-- Banner Copy button-big-->
 
                 <p>With comfort and style in every design, our furniture transforms every room.
                         We guarantee superior workmanship and exemplary service right to your door... </p>
-                <a href="#" class="button-big">Learn more</a>
+               <button class="css3button"><a href="contact.php">Learn more</a></button>
 
            </div>
            <div id ="banner-img">
@@ -84,7 +79,7 @@ include ("shared/navmenu.php")
                 <section>
                     <a href="#" class="bordered-feature-image"><img src="assets/Images/DiningSets/Bachelor1119.jpg" alt="" /></a>
                     <h2>Dining King</h2>
-                    <p>
+                    <p class="index">
                         Be crowned the top host or hostess with your classic elegant
                         <a href="dining.php">dining sets</a>
                         We offer dining tables for groups of four, six or more.
@@ -96,7 +91,7 @@ include ("shared/navmenu.php")
 
                 <!-- Feature #4 -->
                 <section>
-                    <a href="#" class="bordered-feature-image"><img src="assets/Images/Locks/Lamu1136.jpg" alt="Door lock" /></a>
+                    <a href="#" class="bordered-feature-image"><img src="assets/Images/Locks/Laos1137.jpg" alt="Door lock" /></a>
                     <h2>All things fixtures</h2>
                     <p>
                         You can count on the Beaver Industries experts to know the right
@@ -132,7 +127,7 @@ include ("shared/navmenu.php")
 
 
                 <!-- Box #2 -->
-        <section class="sec2">
+        <section class="sec2 indexmidcontent">
             <header>
                 <h2>Services we offer</h2>
                 <h3>Beaver values Customer Satisfaction</h3>
@@ -155,12 +150,10 @@ include ("shared/navmenu.php")
                 <h2>Our customer corner</h2>
                 <h3>Drop us a line on facebook</h3>
             </header>
-            <div class="fb-page" data-href="https://www.facebook.com/BeavertimberCo/"
-                 data-tabs="timeline" data-small-header="false" data-adapt-container-width="true"
-                 data-hide-cover="false" data-show-facepile="true"><blockquote
-                        cite="https://www.facebook.com/BeavertimberCo/" class="fb-xfbml-parse-ignore">
-                    <a href="https://www.facebook.com/BeavertimberCo/">Beaver Timber</a></blockquote>
-            </div>
+            <div class="fb-page" data-href="https://www.facebook.com/BeavertimberCo/" data-tabs="timeline"
+                 data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+                 data-show-facepile="true"><blockquote cite="https://www.facebook.com/BeavertimberCo/" class="fb-xfbml-parse-ignore">
+                    <a href="https://www.facebook.com/BeavertimberCo/ ">Beaver Timber</a></blockquote></div>
 
         </section>
 
@@ -169,7 +162,3 @@ include ("shared/navmenu.php")
 </div>
 
 <?php include("shared/footer.php"); ?>
-
-</body>
-</html>
-

@@ -1,6 +1,3 @@
-
-
-<html>
 <?php
 include("shared/header.php");
 
@@ -32,13 +29,10 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
                     <h2> Filter</h2>
                     <h3>side bar sub heading</h3>
                 </header>
+                <div>
+                    <img src=".\assets\Images\Outdoor\deckfurniture.jpg"
+                </div>
 
-                <ul class="check-list">
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                    <li>options</li>
-                </ul>
             </section>
 
         </div>
@@ -63,9 +57,5 @@ $obj = $pba->GetSubProduct($NavSelection, $subSelection);
 
 
 <?php include("shared/footer.php"); ?>
-
-</body>
-</html>
-
 
 

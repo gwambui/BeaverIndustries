@@ -22,4 +22,13 @@ class ProductBA extends BaseBA
     {
         return $this->pda->GetSubProduct($area, $callname);
     }
+    public function GetDetails($area)
+    {
+        return $this->pda->GetDetails($area);
+    }
+
+    public function SingleObject($ID)
+    {
+        return $this->pda->SingleObject($ID);
+    }
 }
