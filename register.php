@@ -26,6 +26,7 @@ if(isset($_POST['userLogin'])){
              $lastName = htmlspecialchars($_POST['lastName']);
              $email = htmlspecialchars($_POST['email']);
              $password = htmlspecialchars($_POST['password']);
+             $password2 = htmlspecialchars($_POST['password2']);
              $birthdate = htmlspecialchars($_POST['birthdate']);
              $phoneNumber = htmlspecialchars($_POST['phoneNumber']);
              $address = htmlspecialchars($_POST['address']);
@@ -39,14 +40,17 @@ if(isset($_POST['userLogin'])){
              $RecQuestion2 = htmlspecialchars($_POST['question2']);
              $Answer2 = htmlspecialchars($_POST['answer2']);
 
-             $registration= array( "userLogin"=>$userLogin,"firstName"=>$firstName ,
+             if($password == $password2) {$registration= array( "userLogin"=>$userLogin,"firstName"=>$firstName ,
                  "lastName"=>$lastName , "email"=>$email ,"password"=>$password ,"birthdate"=>$birthdate,
                  "phoneNumber"=>$phoneNumber ,"address"=>$address ,   "city"=>$city ,
                  "country"=>$country , "poBox"=>$poBox ,"postalCode"=>$postalCode ,
                  "RecQuestion1"=>$RecQuestion1 ,"Answer1"=>$Answer1 ,
                  "RecQuestion2"=>$RecQuestion2 , "Answer2"=>$Answer2 );
-             $regInfo = new WorkFunctions($registration);
-             $verify = $regInfo->Testinput();
+                $regInfo = new WorkFunctions($registration);
+                $verify = $regInfo->Testinput();
+             }else{
+                echo"<p style=\"text-align:center\">Passwords did not match</p>";
+            }
 
             if(!$verify){
                 echo "<p style=\"text-align:center\">Thank you, Registration is Complete";?><br>
@@ -75,9 +79,9 @@ if(isset($_POST['userLogin'])){
 
 
                     // the message
-                    $msg = $firstName." Thank you for opening an account on Beaver Industries \n
-                            Please take note of your account information which you will need to access \n
-                            Beaver online in future. UserName:".$userLogin." If you would like to modify your \n
+                    $msg = $firstName."\r Thank you for opening an account on Beaver Industries \r
+                            Please take note of your account information which you will need to access \r
+                            Beaver online in future. UserName: ".$userLogin." If you would like to modify your \r
                             account, please visit beaverindustries.co.ke/account. ";
 
                     // use wordwrap() if lines are longer than 70 characters
