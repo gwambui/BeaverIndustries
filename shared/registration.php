@@ -26,7 +26,6 @@
                     <label for="inputphone" >*Phone Number
                         <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
                                 type="tel" placeholder="000" size="30" name="phoneNumber" required></label><br>
-
                     <label for="inputPassword" >*Password</label>
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
                             id="psw" type="password" placeholder="passsword" size="30" name="password"
@@ -62,6 +61,10 @@
                     <label for="inputCity" >City
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
                             type="text" placeholder="Nairobi" size="30" name="city" required><br></label>
+                    <label for="inputCity" >Province
+                        <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
+                                type="text" placeholder="Nairobi" size="30" name="province" required><br></label>
+
                     <label for="inputCountry" >Country</label>
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
                             type="text" placeholder="Kenya" size="30" name="country" required><br>

@@ -3,6 +3,7 @@
 
 $(password);
 $(swapImage);
+$(userInfoUpdate);
 function swapImage(){
 
     $(".setimg").click(function () {
@@ -102,6 +103,19 @@ passInput.onblur = function() {
 
     passverify.focus(function() {
         $("#match").css ('display', 'block');
+
+    });
+}
+
+function userInfoUpdate()
+{
+    $("#addUpdate").click(function()
+    {
+        $(".addEdit").toggle(1000);
+    });
+    $("#phUpdate").click(function ()
+    {
+        $(".phEdit").toggle(1000);
 
     });
 }

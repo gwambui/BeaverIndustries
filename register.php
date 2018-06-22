@@ -31,6 +31,7 @@ if(isset($_POST['userLogin'])) {
     $phoneNumber = htmlspecialchars($_POST['phoneNumber']);
     $address = htmlspecialchars($_POST['address']);
     $city = htmlspecialchars($_POST['city']);
+    $province = htmlspecialchars($_POST['province']);
     $country = htmlspecialchars($_POST['country']);
     $poBox = htmlspecialchars($_POST['pobox']);
     $postalCode = htmlspecialchars($_POST['postalcode']);
@@ -43,7 +44,7 @@ if(isset($_POST['userLogin'])) {
     if ($password == $password2) {
         $registration = array("userLogin" => $userLogin, "firstName" => $firstName,
             "lastName" => $lastName, "email" => $email, "password" => $password, "birthdate" => $birthdate,
-            "phoneNumber" => $phoneNumber, "address" => $address, "city" => $city,
+            "phoneNumber" => $phoneNumber, "address" => $address, "city" => $city, "province" =>$province,
             "country" => $country, "poBox" => $poBox, "postalCode" => $postalCode,
             "RecQuestion1" => $RecQuestion1, "Answer1" => $Answer1,
             "RecQuestion2" => $RecQuestion2, "Answer2" => $Answer2);
@@ -58,9 +59,10 @@ if(isset($_POST['userLogin'])) {
             $clientDTO = new ClientAddDTO(
                 null, null, 4, $userLogin,
                 $firstName, $lastName, $birthdate, $email, $password,
-                $phoneNumber, $address, $city, $country,
+                $phoneNumber, $address, $city, $province, $country,
                 $poBox, $postalCode, $RecQuestion1,
                 $Answer1, $RecQuestion2, $Answer2);
+
             $clientID = $cba->AddClient($clientDTO);
             unset($_POST);
         } else {//var_dump($verify);

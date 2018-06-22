@@ -57,16 +57,14 @@ if(isset($_POST['RemoveItem']))
 
                     echo "<a> Hi ".$_SESSION['user']['FirstName']."! &nbsp;</a>";
                     echo "<a href=\"logout.php\">Sign Out |&nbsp;</a>";
+                    echo "<a href=\"account.php\">My Account |&nbsp;</a>";
                 }
                 else{
                     echo "<a href=\"login.php\">Sign In&nbsp;|&nbsp;</a>";
+                    echo "<a href=\"login.php\">My Account |&nbsp;</a>";
                 }
 
             ?>
-
-
-
-            <a href="login.php">Account&nbsp;|&nbsp;</a>
 
 
 

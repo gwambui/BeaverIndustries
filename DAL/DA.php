@@ -7,6 +7,8 @@ require_once 'DA/ClientDA.php';
 require_once 'MySqlPDO/MySqlPDO.php';
 require_once 'DbSettings.php';
 require_once 'DA/RecoveryQDA.php';
+require_once 'DA/RecoveryQDA.php';
+require_once 'DA/TransactionDA.php';
 
 
 

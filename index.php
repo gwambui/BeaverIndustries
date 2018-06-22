@@ -147,7 +147,7 @@ include ("shared/navmenu.php")
                 <!-- Box #3-->
         <section class="sec2">
             <header>
-                <h2>Our customer corner</h2>
+                <h2>Customer Corner</h2>
                 <h3>Drop us a line on facebook</h3>
             </header>
             <div class="fb-page" data-href="https://www.facebook.com/BeavertimberCo/" data-tabs="timeline"
