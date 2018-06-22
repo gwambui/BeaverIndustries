@@ -18,7 +18,7 @@ class SessionBA extends BaseBA
 
         $user = $da->GetUser($username); //strcmp
 
-        if (!empty($user) && !password_verify($password, $user['PassCode']))
+        if (!empty($user) && password_verify($password, $user['PassCode']))
         { //var_dump($user);
             // If user is retrieved, and password matches.
 
