@@ -29,7 +29,7 @@ include ("shared/navmenu.php");
     <div id="content">
         <section>
         <div class=" login col-6">
-
+            <h2>Page under construction</h2>
             <h2>Returning Customer?</h2>
             <h3>Please Sign In</h3>
             <form class="col-6" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> method='post'>

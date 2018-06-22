@@ -52,7 +52,9 @@
      {
         $user = $this->uda->UpdatePhone($newNum);
         unset($_SESSION['user']);
+        unset($user['PassCode']);
         $_SESSION['user']= $user;
+
      }
      public function UpdateAddress(array $address)
      {
