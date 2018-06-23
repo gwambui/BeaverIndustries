@@ -73,17 +73,17 @@ if(isset($_POST['userLogin'])) {
             // Please specify the return address to use
             ini_set('sendmail_from', 'register@beaverindustries.co.ke');
             // the message
-            $msg = $firstName." Thank you for opening an account on Beaver Industries \n
-                            Please take note of your account information which you will need to access \n
-                            Beaver online in future. UserName:".$userLogin." If you would like to modify your \n
+            $msg = $firstName." Thank you for opening an account on Beaver Industries \r
+                            Please take note of your account information which you will need to access \r
+                            Beaver online in future. UserName:".$userLogin." If you would like to modify your \r
                             account, please visit beaverindustries.co.ke/account. ";
             // use wordwrap() if lines are longer than 70 characters
             $msg = wordwrap($msg,70);
-            $headers = "From:beaver@beaverindustries.co.ke" . "\r\n" .
+            $headers = "From:beaver@beaverindustries.co.ke" . "\r" .
                 "CC: beaver@beaverindustries.co.ke";
             // send email
             mail($email,"Welcome to Beaver Online",
-                "Dear ".$msg, "From:register@beaverindustries.co.ke" . "\r\n" .
+                "Dear ".$msg, "From:register@beaverindustries.co.ke" . "\r" .
                 "CC: register@beaverindustries.co.ke");
 
 
