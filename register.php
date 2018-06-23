@@ -65,7 +65,26 @@ if(isset($_POST['userLogin'])) {
                 $Answer1, $RecQuestion2, $Answer2);
 
             $clientID = $cba->AddClient($clientDTO);
-
+            // SEND CONFIRMATION EMAIL
+            // Please specify your Mail Server - Example: mail.example.com.
+            ini_set("SMTP","mail.beaverindustries.co.ke");
+            // Please specify an SMTP Number 25 and 8889 are valid SMTP Ports.
+            ini_set("smtp_port","26");
+            // Please specify the return address to use
+            ini_set('sendmail_from', 'register@beaverindustries.co.ke');
+            // the message
+            $msg = $firstName." Thank you for opening an account on Beaver Industries \n
+                            Please take note of your account information which you will need to access \n
+                            Beaver online in future. UserName:".$userLogin." If you would like to modify your \n
+                            account, please visit beaverindustries.co.ke/account. ";
+            // use wordwrap() if lines are longer than 70 characters
+            $msg = wordwrap($msg,70);
+            $headers = "From:beaver@beaverindustries.co.ke" . "\r\n" .
+                "CC: beaver@beaverindustries.co.ke";
+            // send email
+            mail($email,"Welcome to Beaver Online",
+                "Dear ".$msg, "From:register@beaverindustries.co.ke" . "\r\n" .
+                "CC: register@beaverindustries.co.ke");
 
 
             echo "<p style=\"text-align:center\">Thank you, Registration is Complete"; ?><br>
