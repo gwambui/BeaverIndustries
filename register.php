@@ -1,8 +1,15 @@
 <?php
+
+
 include("shared/header.php");
-
 include ("shared/navmenu.php");
+?>
+    <div id="content-wrapper">
+    <div id="content">
+    <section>
+    <div class=" login col-12">
 
+<?php
 $rba = new RecoveryQBA();
 $RecQuestions = $rba->GetRecQuestions();
 
@@ -10,17 +17,9 @@ $recQID = empty($_POST['RecQuestionsID']) ? "What primary school did you attend?
 
 $post = $_SERVER['REQUEST_METHOD'] == 'POST'  ? true : false;
 
-?>
-<div id="content-wrapper">
-    <div id="content">
-        <section>
-            <div class=" login col-12">
-
-<?php
-
 // define variables and set to empty values
 if(isset($_POST['userLogin'])) {
-    ///Client add variables
+    ///Client added information
     $userLogin = htmlspecialchars($_POST['userLogin']);
     $firstName = htmlspecialchars($_POST['firstName']);
     $lastName = htmlspecialchars($_POST['lastName']);
@@ -41,9 +40,9 @@ if(isset($_POST['userLogin'])) {
     $RecQuestion2 = htmlspecialchars($_POST['question2']);
     $Answer2 = htmlspecialchars($_POST['answer2']);
 
-    if ($password == $password2) {
+    if (!strcmp($password , $password2)) {
         $registration = array("userLogin" => $userLogin, "firstName" => $firstName,
-            "lastName" => $lastName, "email" => $email, "password" => $password, "birthdate" => $birthdate,
+            "lastName" => $lastName, "email" => $email, 'password' => $password, "birthdate" => $birthdate,
             "phoneNumber" => $phoneNumber, "address" => $address, "city" => $city, "province" =>$province,
             "country" => $country, "poBox" => $poBox, "postalCode" => $postalCode,
             "RecQuestion1" => $RecQuestion1, "Answer1" => $Answer1,
@@ -51,9 +50,11 @@ if(isset($_POST['userLogin'])) {
         $regInfo = new WorkFunctions($registration);
         $verify = $regInfo->Testinput();
 
+
+
+
         if (!$verify) {
-            echo "<p style=\"text-align:center\">Thank you, Registration is Complete"; ?><br>
-            <?php echo "An Email confirmation will be sent shortly.</p>";
+
             $cba = new ClientBA();
             $uba = new UserBA();
             $clientDTO = new ClientAddDTO(
@@ -64,26 +65,32 @@ if(isset($_POST['userLogin'])) {
                 $Answer1, $RecQuestion2, $Answer2);
 
             $clientID = $cba->AddClient($clientDTO);
-            unset($_POST);
-        } else {//var_dump($verify);
-            //$populate = false;
+
+
+
+            echo "<p style=\"text-align:center\">Thank you, Registration is Complete"; ?><br>
+            <?php echo "An Email confirmation will be sent shortly.</p>";
+        } else {
             foreach ($verify as $value) {
                 echo $value . "<br>";
             }
+
             include("shared/registration.php");
         }
 
 
     } else {
         echo "<p style=\"text-align:center\">Passwords did not match</p>";
+
         include("shared/registration.php");
     }
-
+    unset($_POST);
 }
 
 
  else {
-    //$populate =true;
+
+
      include("shared/registration.php");
  }
 ?>

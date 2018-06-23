@@ -13,23 +13,28 @@ class SessionBA extends BaseBA
      */
     public function Login($username, $password)
     {
-        //var_dump($password);
+        //($password);
+        //var_dump($username);
         $da = new UserDA();
 
-        $user = $da->GetUser($username); //strcmp
+        $user = $da->GetUser($username); //!strcmp
 
-        if (!empty($user) && password_verify($password, $user['PassCode']))
-        { //var_dump($user);
-            // If user is retrieved, and password matches.
+        //var_dump(password_get_info('$2y$10$j9GdIBsRNY3zCRq6pLDubOrRGMd7NXe/RFjQQW'));
+        if(!empty($user)){
 
-            // Let's not store the password in a public session.
-            unset($user['PassCode']);
 
-            $_SESSION['user'] = $user;
+            if ( password_verify($password, $user['PassCode'] ))
+            {
+                // If user is retrieved, and password matches.
 
-            return true;
+                // Let's not store the password in a public session.
+                unset($user['PassCode']);
+
+                $_SESSION['user'] = $user;
+
+                return true;
+            }
         }
-
         return false;
     }
 }

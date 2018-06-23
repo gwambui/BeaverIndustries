@@ -5,7 +5,7 @@
                 <h2>Register for an account</h2>
                 <h3>Please provide the requested information. *Indicates required fields </h3>
 
-                <form class="col-12" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> method='post'>
+                <form class="col-12" action= <?php echo "register.php"; ?> method='post'>
                     <label for="inputName" >*User Name
                     <input type="text" placeholder="User Name" size="30" name="userLogin" required autofocus
                         <?php echo !$post ? "disabled='disabled'" : "" ;?>><br></label>

@@ -1,4 +1,5 @@
 <?php
+
 require_once 'BAL/BA.php';
 
 $post = $_SERVER['REQUEST_METHOD'] == 'POST' ? true : false;
@@ -10,14 +11,15 @@ if ($post)
     $loggedin = $sba->Login($username, $password);
 
     if ($loggedin)
-    { //{echo "<p>you are logged in as</p>".$_SESSION['user']['LoginID'];
+    {
 
-        header("Location: index.php");
+       header("Location: index.php");
         die();
+
     }
     else
     {
-        $error = "Sorry, there was an error logging in!  Please try again.";
+        $msg = "Sorry, there was an error logging in!  Please try again.";
     }
 }
 include("shared/header.php");
@@ -29,7 +31,10 @@ include ("shared/navmenu.php");
     <div id="content">
         <section>
         <div class=" login col-6">
-            <h2 style="color: blue; font-weight: bold; ">Page under construction</h2>
+            <?php if ($post) { ?>
+                <br>
+                <div><?php echo "<b>&nbsp;" . $msg . "</b>"; ?></div>
+            <?php } ?>
             <h2>Returning Customer?</h2>
             <h3>Please Sign In</h3>
             <form class="col-6" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> method='post'>
@@ -41,10 +46,7 @@ include ("shared/navmenu.php");
                 <input type="password" placeholder="passsword"
                        size="40" name="password" required><br></label>
                 <button type="submit" class="css3button">SIGN IN</button>
-                <?php if ($post) { ?>
-                    <br>
-                    <div class=""><? echo "<b>&nbsp;" . $error . "</b>"; ?></div>
-                <?php } ?>
+
 
                   </form>
 

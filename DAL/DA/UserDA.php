@@ -12,7 +12,7 @@ class UserDA extends BaseDA
     public function GetUser($username)
     {
         $bindParms = array('LoginID'=>$username);
-        return $this->db->GetArray("call UR_UserLogin(:LoginID);",$bindParms);
+        return $this->db->GetArray("select * from UR_User where LoginID = :LoginID;",$bindParms);
     }
 
     public function GetUserByID($id)
@@ -31,6 +31,7 @@ class UserDA extends BaseDA
     public function AddUser(ClientAddDTO $user)
     {
         // Encrypt the password before saving it.
+        //var_dump($user->Password);
         $pass = password_hash($user->Password, PASSWORD_DEFAULT);
         $date = date_create($user->BirthDate);
         //User table rows as in database
@@ -40,7 +41,7 @@ class UserDA extends BaseDA
             "FirstName"=>$user->FirstName,
             "LastName"=>$user->LastName,
             "BirthDate"=>date_format($date, "Y-m-d"),
-            "Passcode"=>$pass,
+            "PassCode"=>$pass,
             "PhoneNumber"=>$user->PhoneNumber,
             "EmailAddress"=>$user->Email,
             "RecoveryQuest1"=>$user->Recovery1,
