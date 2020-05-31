@@ -22,6 +22,7 @@ class ClientAddDTO
     var $PhoneNumber ;
     var $Address ;
     var $City ;
+    var $Province;
     var $Country ;
     var $PoBox;
     var $PostalCode;
@@ -48,7 +49,7 @@ class ClientAddDTO
  * @param TypeID
  */
     public function __construct($ID, $userID, $TypeID, $LoginID, $firstName, $lastName, $birthDate,
-                                $email, $password, $phoneNumber, $address, $city,
+                                $email, $password, $phoneNumber, $address, $city, $province,
                                 $country, $PoBox, $PostalCode, $Recovery1, $Ans1, $Recovery2, $Ans2)
     {
         $this->clientID = $ID;
@@ -64,6 +65,7 @@ class ClientAddDTO
         $this->PhoneNumber = $phoneNumber;
         $this->Address = $address;
         $this->City = $city;
+        $this->Province = $province;
         $this->Country = $country;
         $this->PoBox = $PoBox;
         $this->PostalCode = $PostalCode;

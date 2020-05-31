@@ -5,14 +5,12 @@
 
  class UserBA extends BaseBA
  {
+     /*User DA variable*/
+     private $uda;
      public function __construct()
      {
          $this->uda = new UserDA();
      }
-
-
-     /*User DA variable*/
-     private $uda;
      /**
       * @param $userID
       * @return array
@@ -39,5 +37,29 @@
              throw new PDOException($pex);
          }
      }
+     public function GetAddress($ID)
+     {
+         try
+         {
+             return $this->uda->GetAddress($ID);
+         }
+         catch (PDOException $pex)
+         {
+             throw new PDOException($pex);
+         }
+     }
+     public function UpdatePhone($newNum)
+     {
+        $user = $this->uda->UpdatePhone($newNum);
+        unset($_SESSION['user']);
+        unset($user['PassCode']);
+        $_SESSION['user']= $user;
+
+     }
+     public function UpdateAddress(array $address)
+     {
+         $this->uda->UpdateAddress($address);
+     }
+
 
  }

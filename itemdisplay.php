@@ -26,7 +26,7 @@ unset($_POST['pieces']);
     <div id="content">
 
             <section>
-                <?php var_dump($obj);?>
+                <?php //var_dump($obj);?>
                 <div class="secondaryImg">
                     <?php
                         foreach ($obj as $item => $value){

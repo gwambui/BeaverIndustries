@@ -795,10 +795,10 @@ header #contact {
     margin: 10px;
 
 }
-.login label,.login input{margin: 8px; }
-.login input{
+.login label{  margin: 8px;}
+.login input, .phEdit input, .addEdit input{
 
-
+    margin: 8px;
     border: 1px solid #a2b5c1;
     border-radius: 5px;
 }
@@ -808,6 +808,47 @@ header #contact {
     padding: 8px;
     line-height: 24px;
     font-size: 18px;
+}
+/*******password verification********/
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+.floatl{
+    float: left;
+}
+.addEdit, .phEdit
+{
+    display: none;
 }
 /************** Footer **************/
 #footer {
@@ -845,6 +886,7 @@ header #contact {
 {
     margin: 0 0 30px 0 !important;
 }
+
 /*********************************************************************************/
 /* 1200px (>= 770px <1070)                                                             */
 /*********************************************************************************/
@@ -879,6 +921,13 @@ header #contact {
 
 
     }
+    #header #contact  {
+
+        padding-left: 50%!important;
+
+
+
+    }
 
 
 
@@ -901,13 +950,13 @@ header #contact {
     /* For desktop: */
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
+    .col-3 {width: 25%;float:left;}
     .col-4 {width: 33.33%;}
     .col-5 {width: 41.66%;}
     .col-6 {width: 50%;}
     .col-7 {width: 58.33%;}
     .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
+    .col-9 {width: 75%; float:right;}
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}

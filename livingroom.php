@@ -7,10 +7,10 @@ include("shared/header.php");
 
 <!-- Header -->
 <?php
-
+include ("shared/navmenu.php");
 
 $NavSelection = "Livingroom";
-include ("shared/navmenu.php");
+
 /*
  * retrieve item details as sidebar options
  */

@@ -4,10 +4,11 @@
 
                 <h2>Register for an account</h2>
                 <h3>Please provide the requested information. *Indicates required fields </h3>
-                <form class="col-12" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?> method='post'>
+
+                <form class="col-12" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method='post'>
                     <label for="inputName" >*User Name
                     <input type="text" placeholder="User Name" size="30" name="userLogin" required autofocus
-                        <?php echo !$post ? "disabled='disabled'" : "" ."value =\"" .!$populate ? "" : $userLogin ."\"";?>><br></label>
+                        <?php echo !$post ? "disabled='disabled'" : "" ;?>><br></label>
                     <label for="inputFName" >*First Name
                     <input <?php echo !$post ? "disabled='disabled'" : "";  ?>
                             type="text" placeholder="First Name" size="30" name="firstName" required><br></label>
@@ -24,16 +25,26 @@
 
                     <label for="inputphone" >*Phone Number
                         <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
-                                type="tel" placeholder="000" size="30" name="phoneNumber" required><br></label>
-
-                    <label for="inputPassword" >*Password
+                                type="tel" placeholder="000" size="30" name="phoneNumber" required></label><br>
+                    <label for="inputPassword" >*Password</label>
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
+                            id="psw" type="password" placeholder="passsword" size="30" name="password"
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter,
+                            and at least 8 or more characters"
+                            required>
 
-                            type="password" placeholder="passsword" size="30" name="password" required><br></label>
-                    <label for="inputPassword" >*Verify Password
+                    <label for="inputPassword" >*Verify Password</label>
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
-                            type="password" placeholder="passsword" size="30" name="password" required><br></label>
-
+                            id="psw2" type="password"  placeholder="passsword" size="30" name="password2" required>
+                    <div id="message">
+                        <h3>Password must contain the following:</h3>
+                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                        <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+                        <p id="number" class="invalid">A <b>number</b></p>
+                        <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                    </div>
+                    <h3 id="match"> </h3>
 
                     <br><label for="inputAddress" >Address
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
@@ -47,13 +58,16 @@
                             type="text" placeholder="Postal Code" size="30" name="postalcode" required><br></label>
 
 
-
                     <label for="inputCity" >City
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
-                            type="text" placeholder="City" size="30" name="city" required><br></label>
-                    <label for="inputCountry" >Country
+                            type="text" placeholder="Nairobi" size="30" name="city" required><br></label>
+                    <label for="inputCity" >Province
+                        <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
+                                type="text" placeholder="Nairobi" size="30" name="province" required><br></label>
+
+                    <label for="inputCountry" >Country</label>
                     <input <?php echo !$post ? "disabled='disabled'" : ""; ?>
-                            type="text" placeholder="Kenya" size="30" name="country" required><br></label>
+                            type="text" placeholder="Kenya" size="30" name="country" required><br>
                     <br>
                     <label for ="recoveryQuestions"> Recovery Question1
                     <select class="form-control" name="question1" <?php echo !$post ? "disabled='disabled'" : ""; ?>>

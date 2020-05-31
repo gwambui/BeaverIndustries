@@ -68,8 +68,8 @@ class SqlObjFilter
 
             foreach($this->arr as $object=>$specs)
             {
-
-                if(strcmp($value, $specs['Details'])  == 0 )
+//                var_dump($specs);
+                if(strcmp($value, $specs["Details"])  == 0 )
                 {
 
                     $this->filtered[] = $specs;
