@@ -32,7 +32,7 @@ class UserDA extends BaseDA
     {
         // Encrypt the password before saving it.
         //var_dump($user->Password);
-        $pass = password_hash($user->Password, PASSWORD_DEFAULT);
+        $pass = password_hash($user->Password, PASSWORD_ARGON2I);
         $date = date_create($user->BirthDate);
         //User table rows as in database
         $bindParms = array(

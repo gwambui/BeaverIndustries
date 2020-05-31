@@ -23,19 +23,19 @@ $add = $uba->GetAddress($_SESSION['user']['UserID']);
 
 
 ?>
-<h3>Here are your personal details.</h3>
+<h3>Personal details.</h3>
 <?php
-    echo "<p>User name:   ".$_SESSION['user']['LoginID']." <br>";
-    echo "First name:     ".$_SESSION['user']['FirstName']." <br>";
-    echo "Last name:  ".$_SESSION['user']['LastName']." <br>";
-    echo "Phone Number:   ".$_SESSION['user']['PhoneNumber']." <br>";
+    echo "<p>User name:     ".$_SESSION['user']["LoginID"]." <br>";
+    echo "First name:       ".$_SESSION['user']["FirstName"]." <br>";
+    echo "Last name:        ".$_SESSION['user']["LastName"]." <br>";
+    echo "Phone Number:     ".$_SESSION['user']["PhoneNumber"]." <br>";
 
-    echo "Address:    ".$add['Address']." <br>";
-    echo "PoBox:      ".$add['PoBox']." <br>";
-    echo "City:   ".$add['City']." <br>";
-    echo "Province:   ".$add['Province']." <br>";
-    echo "PostalCode:     ".$add['PostalCode']." <br>";
-    echo "Country:    ".$add['Country']." </p>";
+    echo "Address:      ".$add["Address"]." <br>";
+    echo "PoBox:        ".$add["PoBox"]." <br>";
+    echo "City:         ".$add["City"]." <br>";
+    echo "Province:     ".$add["Province"]." <br>";
+    echo "PostalCode:   ".$add["PostalCode"]." <br>";
+    echo "Country:      ".$add["Country"]." </p>";
 ?>
 
 <h3>Click to update: <u id ="addUpdate" style="cursor: pointer">Address</u> | <u id="phUpdate" style="cursor: pointer">phone number. </u></h3>

@@ -35,8 +35,9 @@ if (count($obj) > 0)
     echo "<table class='table '>";
     echo "<tr>";
 
-    //var_dump(array($value));<a href='itemdisplay.php'   target='_blank'  > </a>
+    //var_dump(array($obj));<a href='itemdisplay.php'   target='_blank'  > </a>
     foreach ($obj as $item => $value) {
+        //var_dump($value);
         $itemID = $value['ProductID'];
 
         $price  = $fmt->formatCurrency($value['Price'], "KES");
