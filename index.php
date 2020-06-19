@@ -22,20 +22,51 @@ include ("shared/navmenu.php")
 
 
 <div id ="banner-wrapper">
-    <div id="banner">
-           <div id="textarea">
-                <!-- Banner Copy button-big-->
 
-                <p>With comfort and style in every design, our furniture transforms every room.
-                        We guarantee superior workmanship and exemplary service right to your door... </p>
-               <button class="css3button"><a href="contact.php">Learn more</a></button>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="assets/Images/CoffeeTables/Crate1404.jpg" style="max-height:400px; margin:auto" alt="Contemporary coffee table">
+            </div>
 
-           </div>
-           <div id ="banner-img">
-                <!-- Banner Image -->
-                 <a href="#" class="bordered-feature-image"><img src="assets/Images/BedsCribsDeckers/Bby1000.jpg" alt="" /></a>
+            <div class="item">
+                <img src="assets/Images/Sofa/Harusi1263.jpg" style="max-height:400px; margin:auto" alt="Elegant sofas">
+            </div>
 
-           </div>
+            <div class="item">
+                <img  src="assets/Images/BedsCribsDeckers/Elsa1375.jpg" style="max-height:400px; margin:auto" alt="Kids Beds">
+            </div>
+            <div class="item">
+                <img  src="assets/Images/Sofa/Blockshape1254.jpg" style="max-height:400px; margin:auto" alt="Daybeds">
+            </div>
+            <div class="item">
+                <img  src="assets/Images/Outdoor/Beach1152.jpg" style="max-height:400px; margin:auto" alt="Daybeds">
+            </div>
+            <div class="item">
+                <img  src="assets/Images/CoffeeTables/Soho1481.jpg" style="max-height:400px; margin:auto" alt="Daybeds">
+            </div>
+
+
+            <div id="banner">     </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
         <div class ="clr"></div>
     </div>
 </div>
@@ -150,7 +181,7 @@ include ("shared/navmenu.php")
                 <h2>Customer Corner</h2>
                 <h3>Drop us a line on facebook</h3>
             </header>
-            <div class="fb-page" data-href="https://www.facebook.com/BeavertimberCo/" data-tabs="timeline"
+            <div id="fb" class="fb-page" data-href="https://www.facebook.com/BeavertimberCo/" data-tabs="timeline"
                  data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
                  data-show-facepile="true"><blockquote cite="https://www.facebook.com/BeavertimberCo/" class="fb-xfbml-parse-ignore">
                     <a href="https://www.facebook.com/BeavertimberCo/ ">Beaver Timber</a></blockquote></div>

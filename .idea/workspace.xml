@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="56d3262a-7b70-4d08-93cc-6ad028ddab24" name="Default" comment="9:48 am Apr 20 2018" />
+    <list default="true" id="56d3262a-7b70-4d08-93cc-6ad028ddab24" name="Default" comment="9:48 am Apr 20 2018">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/tablet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testmail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/beaver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/beaver.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/backup.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/desktop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/shared/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/productdisplay.php" beforeDir="false" afterPath="$PROJECT_DIR$/shared/productdisplay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/shared/registration.php" afterDir="false" />
+    </list>
     <list id="7989a67a-20e9-4245-83de-5410da0912e3" name="9:48 am Apr 20 2018" comment="">
       <change beforePath="$PROJECT_DIR$/DAL/DbSettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/DAL/DbSettings.php" afterDir="false" />
     </list>
@@ -50,7 +63,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../wamp64/www/BeaverExercise" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -177,14 +190,9 @@
       <workItem from="1589073208868" duration="6586000" />
       <workItem from="1589368348255" duration="699000" />
       <workItem from="1589820511275" duration="1920000" />
-      <workItem from="1589828220115" duration="22499000" />
-    </task>
-    <task id="LOCAL-00018" summary="9:48 am Apr 20 2018">
-      <created>1524749467748</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1524749467748</updated>
+      <workItem from="1589828220115" duration="31492000" />
+      <workItem from="1591467081226" duration="11177000" />
+      <workItem from="1592071658406" duration="24268000" />
     </task>
     <task id="LOCAL-00019" summary="9:48 am Apr 20 2018">
       <created>1524759296446</created>
@@ -522,7 +530,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590963049572</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="9:48 am Apr 20 2018">
+      <created>1590963154370</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1590963154370</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,22 +562,27 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="284" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1590953926184" />
-    <state x="2258" y="138" width="965" height="864" key="CommitChangelistDialog2" timestamp="1590963075276">
+    <state x="1431" y="62" width="965" height="864" key="CommitChangelistDialog2" timestamp="1592598578563">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="2258" y="138" width="965" height="864" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1590963075276" />
-    <state x="2586" y="278" key="FileChooserDialogImpl" timestamp="1590955641804">
-      <screen x="1366" y="0" width="1920" height="1040" />
+    <state x="1431" y="62" width="965" height="864" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1592598578563" />
+    <state x="653" y="183" key="FileChooserDialogImpl" timestamp="1591228175401">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="2586" y="278" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1590955641804" />
-    <state x="2212" y="65" key="Vcs.Push.Dialog.v2" timestamp="1590963117016">
+    <state x="653" y="183" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1591228175401" />
+    <state x="2212" y="65" key="Vcs.Push.Dialog.v2" timestamp="1590963469844">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="2212" y="65" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1590963117016" />
-    <state x="2473" y="443" key="publish.login" timestamp="1590963052426">
+    <state x="2212" y="65" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1590963469844" />
+    <state x="1644" y="0" width="717" height="1024" key="dock-window-1" timestamp="1592599263056">
       <screen x="1366" y="0" width="1920" height="1040" />
     </state>
-    <state x="2473" y="443" key="publish.login/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1590963052426" />
+    <state x="1644" y="0" width="717" height="1024" key="dock-window-1/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1592599263056" />
+    <state x="2473" y="443" key="publish.login" timestamp="1590963451290">
+      <screen x="1366" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2473" y="443" key="publish.login/0.0.1366.728/1366.0.1920.1040@1366.0.1920.1040" timestamp="1590963451290" />
     <state x="575" y="224" width="672" height="678" key="search.everywhere.popup" timestamp="1589836158605">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -72,6 +72,7 @@
                     <label for ="recoveryQuestions"> Recovery Question1
                     <select class="form-control" name="question1" <?php echo !$post ? "disabled='disabled'" : ""; ?>>
                         <?php
+                        $isSelected ="";
                         foreach ($RecQuestions as $item => $value) {
 
                             if (!empty($_POST['RecQuestionsID']))
@@ -91,6 +92,7 @@
                     <br><label for ="recoveryQuestions"> Recovery Question2
                         <select class="form-control" name="question2" <?php echo !$post ? "disabled='disabled'" : ""; ?>>
                         <?php
+                        $isSelected ="";
                         foreach ($RecQuestions as $item => $value) {
 
                             if (!empty($_POST['RecQuestionsID']))

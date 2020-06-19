@@ -140,6 +140,8 @@ a:visited{
 .bordered-feature-image
 {
     display: block;
+    max-height:400px; !important;
+    margin:auto; !important;
     border: solid 5px #b5bec3;
     box-shadow: 3px 3px 3px 1px rgba(0,0,0,0.15);
     margin: 10px  0;
@@ -185,7 +187,7 @@ a:visited{
     display: block;
     max-width: 100%;
 }
-/* Index page big button and Narrow optiopns submit button in content item display pages*/
+/* Index page big button and Narrow options submit button in content item display pages*/
 button.css3button {
     display: block;
     margin:0 auto;
@@ -228,7 +230,7 @@ button.css3button {
 }
 /*********************Wrappers***********************************/
 #header-wrapper {
-    background: #3B4346;
+    /*background: #3B4346;*/
     box-shadow: inset 0 -1px 0 0 #51575a;
     width: 100%;
     margin: 0;
@@ -269,7 +271,7 @@ button.css3button {
 #content-wrapper {
     clear: both;
     width: 100%;
-    background: #f7f7f7 url('images/bg04.png');
+    /*background: #f7f7f7 url('images/bg04.png');*/
     border-top: solid 1px #fff;
     padding: 45px 0 45px 0;
 
@@ -291,9 +293,9 @@ header #contact {
  }
 
 #header #contact a {
-    color: #c6c8c8;
+    color: #000000;
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 1.2em;
     position: relative;
 
 }
@@ -310,10 +312,11 @@ header #contact {
 }
 
 #header h1 a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 
 }
+
 
 #header nav {
     display: flex;
@@ -324,11 +327,15 @@ header #contact {
 }
 #header nav a {
 
-    color: #c6c8c8;
-    font-size: 1em;
+    color: #000000;
+    font-size: 1.5em;
     margin: 0 auto;
     outline: 0;
 }
+#header nav a::first-letter {
+     font-size: 125%;
+     #color: #8A2BE2;
+ }
 #header nav a:hover , #header #contact a:hover{
     color: #f6f8f8;
 
@@ -362,21 +369,8 @@ header #contact {
     clear: both;
 }
 /*banner and features on index page*/
-#banner
-{  padding: 20px 20px 10px 20px;
-    text-align: center;
-}
-#banner #textarea {
-    float: left;
-    width: 45%;
-}
-#banner-img {
-    float: right;
-    margin-bottom: 0;
-    right: 0;
-    width: 50%;
 
-}
+
 #features {
     color: #a0a8ab;
 
@@ -416,8 +410,8 @@ header #contact {
 
 }
 /*content index*/
-#content {
-    width:95% !important;
+#content{
+    width:100% !important;
 }
 #content section {
     background: #fff;
@@ -554,12 +548,15 @@ header #contact {
 {
     font-size: 22px;
 }
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th  {
+    padding: 8px 0;
+}
 /*Style for grid view objects*/
 .itemDisplay img{
-    display: block;
+    /*display: block;*/
     margin: auto;
-    height:80px;
-    max-width: 100%;
+    height:auto;
+    max-width:100%;
 
 
 }
@@ -577,11 +574,12 @@ header #contact {
 /*individual items styling*/
 .itemDisplay div, .col-9 div{
 
-    margin:0 30px 0 0;
+    margin:0 0 0 0;
     border: 1px solid #96a9b5;
-    width:100%;
+    max-width:100%;
     display: flex;
     justify-content: center;
+    height:100px;
 }
 
 .itemDisplay p
@@ -854,7 +852,7 @@ header #contact {
 #footer {
     color: #546b76;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 #footer section
@@ -887,287 +885,4 @@ header #contact {
     margin: 0 0 30px 0 !important;
 }
 
-/*********************************************************************************/
-/* 1200px (>= 770px <1070)                                                             */
-/*********************************************************************************/
 
-@media screen and  (max-width: 1078px) and (min-width: 760px) {
-    /* Header */
-    #header h1 a {
-
-        font-size: 24px !important;
-
-    }
-    #header nav a, #header #contact a {
-        font-size: 0.8em !important;
-
-
-    }
-    /* Banner */
-    #banner p {
-        font-size: 1.2em !important;
-    }
-    /* Content */
-    #content h2 {
-        font-size: 1.2em;
-    }
-
-    #content h3 {
-        font-size: 1.1em;
-        color:  #474f51;
-    }
-    #hoverbox {
-        top: 135px !important;
-
-
-    }
-    #header #contact  {
-
-        padding-left: 50%!important;
-
-
-
-    }
-
-
-
-
-
-
-}
-
-
-
-
-
-
-/*********************************************************************************/
-/* 1200px (>= 768px)                                                             */
-/*********************************************************************************/
-
-@media screen and (min-width: 768px) {
-
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;float:left;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%; float:right;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-
-    body, input, textarea, select
-    {
-
-
-        font-size: 13.5pt;
-        line-height: 1.85em;
-        font-weight: 300;
-    }
-    .check-list li
-    {font-size: 1em;
-
-    }
-
-    section:last-child {
-        margin-bottom: 0 !important;
-    }
-    #header-wrapper {
-        padding: 0;
-        min-height: 100px;
-    }
-
-
-    #header {
-        width: 80%;
-        margin: 0 auto;
-        height: 150px;
-    }
-    #banner-wrapper {
-
-        width: 80%;
-
-    }
-    #features-wrapper { /*#353D40*/
-        width: 80%;
-        margin: 20px auto;
-        padding: 20px 0 ;
-
-    }
-    #footer-wrapper
-    { padding: 45px 25px;
-    }
-    #header {
-
-
-    }
-
-    #header img {
-        position: relative;
-        left: 0;
-        bottom: -10px;
-        float: left;
-
-    }
-    #header h1 {
-        top: 40px;
-        font-size: 40px;
-        text-align: left;
-
-    }
-    #header #contact  {
-        text-align: right;
-        padding-left: 70%;
-        padding-bottom: 20px;
-
-
-    }
-    #header #contact a{
-        display: inline-block;
-        font-size: 0.8em;
-        font-weight: 300;
-
-    }
-    #header nav {
-        float:right;
-        top: 0;
-        padding-bottom: 10px;
-        vertical-align: center;
-
-}
-    #header nav a {
-        font-size: 1.2em;
-        margin-left: 0;
-        padding: 0;
-    }
-
-    #header nav a:last-child {
-        margin-right: 0;
-    }
-
-
-    #hoverbox {
-        top: 120px;
-
-
-    }
-    #banner {
-        float: none;
-        height: auto;
-
-    }
-    #banner button{
-        line-height:20px;
-        font-size: 20px !important;
-    }
-    #banner p {
-        font-size: 1.4em;
-        font-weight: 200;
-        line-height: 1.25em;
-        padding-right: 1em;
-        margin: 0 0 1em 0;
-    }
-    #features section
-    {height:auto;
-        border-bottom:hidden;
-        box-shadow:none;
-
-    }
-    #features .sec1 {
-
-
-        width: 22%;
-        margin: 0 1.5%;
-    }
-    #content{
-        width: 80% !important;
-        display: block;
-        margin: 0 auto;
-    }
-    #content .sec2 {
-
-        margin:0 0 10% 0 ;
-        width: 28.5%;
-        float: left;
-
-    }
-
-    .indexmidcontent{margin-left: 2.2% !important;margin-right: 2.2% !important;}
-
-    /*content sub pages*/
-
-    #content h2 {
-        font-size: 1.4em;
-
-    }
-
-    #content h3 {
-
-        font-size: 1.25em;
-    }
-    #content-wrapper #content .sidebar {
-        width: 22%;
-        left: 0;
-        float: left;
-        display: block;
-    }
-    /*Product listing grid page*/
-    #content-wrapper #content .main{
-        width:75%;
-        right:0;
-        float:right;
-    }
-    .itemDisplay img{
-
-        height:130px;
-       }
-    /***************filter div similar to side bar used for mobile: position top***********************/
-    .topbar{display: none;}
-    /**************************Order page styling********************************/
-
-    .order th{
-        font-size: 20px;
-
-    }
-    .order tr{  height: 50px;  }
-
-    .order td{
-        font-size: 18px;
-        line-height:18px;
-
-    }
-    .order button{
-        border: solid 2px;
-    }
-    button{
-        line-height:18px;
-        font-size: 16px !important;
-    }
-    .cartButtons{
-
-        margin: 30px auto ;
-        padding:10px;
-
-
-    }
-    .cartButtons button{
-
-        padding:15px;
-        line-height:20px;
-        border: solid 3px;
-    }
-
-
-    /************** Footer **************/
-    #footer section div  {
-        float: left !important;
-        width: 20% !important;
-
-    }/*#footer section div:Last-child{width: 20%;float: right;}*/
-
-}

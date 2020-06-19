@@ -1,0 +1,56 @@
+
+/*********************************************************************************/
+/* 1200px (>= 770px <1070)         Tablet                                                    */
+/*********************************************************************************/
+
+@media screen and  (max-width: 1078px) and (min-width: 760px) {
+    /* Header */
+    #header h1 a {
+
+        /*font-size: 24px !important;*/
+
+    }
+    #header nav a {
+        font-size: 1.5em;
+    }
+    #header #contact a {
+        font-size: 1em !important;
+
+
+    }
+    /* Banner */
+
+    #banner p {
+        font-size: 1.2em !important;
+
+    }
+    /* Content */
+    #content h2 {
+        font-size: 1.2em;
+    }
+
+    #content h3 {
+        font-size: 1.1em;
+        color:  #474f51;
+    }
+    #hoverbox {
+        top: 135px !important;
+
+
+    }
+    #header #contact  {
+
+        padding-left: 50%!important;
+
+
+
+    }
+
+
+
+
+
+
+}
+
+
