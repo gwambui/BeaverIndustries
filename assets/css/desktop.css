@@ -137,8 +137,16 @@
         font-weight: 300;
 
     }
-
+    .hamburger , .topnav #myLinks{
+        display: none;!important;
+    }
     #header nav {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        font-weight: 200;
+        line-height: 1.75em;
+
         float: right;
         top: 0;
         padding-bottom: 10px;
