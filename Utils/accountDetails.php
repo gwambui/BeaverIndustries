@@ -12,15 +12,7 @@ $add = $uba->GetAddress($_SESSION['user']['UserID']);
 ?>
 <?php
 
-
-
 //|| isset($_POST['address'])
-
-
-
-
-
-
 
 ?>
 <h3>Personal details.</h3>

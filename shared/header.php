@@ -56,6 +56,8 @@ if(!isset($_SESSION)){session_start();}
         <link rel="stylesheet" href="assets/css/style.css" />
         <link rel="stylesheet" href="assets/css/desktop.css" />
         <link rel="stylesheet" href="assets/css/tablet.css" />
+        <link rel="stylesheet" href="assets/css/content.css" />
+
        <!-- <link rel="stylesheet" href="assets/css/content.css" />-->
 
         <!--nav menu drop down list--> <script src =assets/js/displayMenu.js></script>

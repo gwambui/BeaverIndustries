@@ -10,6 +10,16 @@
         /*font-size: 24px !important;*/
 
     }
+    .hamburger, .topnav #myLinks{
+        display: none; !important;
+    }
+    #header nav {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        font-weight: 200;
+        line-height: 1.75em;
+    }
     #header nav a {
         font-size: 1.5em;
     }
@@ -18,6 +28,13 @@
 
 
     }
+    #header-wrapper {
+
+        padding: 0 0 20px 0;
+
+        height: fit-content;!important;
+    }
+
     /* Banner */
 
     #banner p {
@@ -34,7 +51,7 @@
         color:  #474f51;
     }
     #hoverbox {
-        top: 135px !important;
+        top: 150px !important;
 
 
     }
