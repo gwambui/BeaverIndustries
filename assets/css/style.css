@@ -1,8 +1,6 @@
-
-
-/**
-******************Global******************
-*/
+    /**
+    ******************Global******************
+    */
 
 
 body{
@@ -91,7 +89,7 @@ a:visited{
     border-top: solid 1px #e0e4e6;
     border-bottom: solid 1px #b5bec3;
 }
-/*Hamburger meonu*/
+/*Hamburger menu*/
 .hamburger {
     display: inline-block;
     cursor: pointer;
@@ -347,7 +345,7 @@ button.css3button {
 
 header #contact {
 
- }
+}
 
 #header #contact a {
     color: #000000;
@@ -391,9 +389,9 @@ header #contact {
     outline: 0;
 }
 #header nav a::first-letter {
-     font-size: 125%;
-     #color: #8A2BE2;
- }
+    font-size: 125%;
+    #color: #8A2BE2;
+}
 #header nav a:hover , #header #contact a:hover{
     color: #546b76;
 
@@ -532,10 +530,10 @@ header #contact {
 
 }
 #content .topbar{
-     width: 100%;
+    width: 100%;
     padding-bottom: 30px;
     margin-bottom: 10px;
- }
+}
 #tag{
     float: left;
     cursor: pointer;
@@ -837,7 +835,7 @@ header #contact {
     display: none;
 }
 .cartpreview img{
-   max-width:30px ;
+    max-width:30px ;
     height: 40px!important;
 }
 .cartpreview .order th
@@ -942,5 +940,3 @@ header #contact {
 {
     margin: 0 0 30px 0 !important;
 }
-
-

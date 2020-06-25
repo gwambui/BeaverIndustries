@@ -114,11 +114,4 @@ if(isset($_POST['RemoveItem']))
     </div>
 
 </div>
-<script>
-    function hamburger(x) {
-        x.classList.toggle("change");
-        var y = document.getElementById("myLinks");
-        y.classList.toggle("load")
 
-    }
-</script>
