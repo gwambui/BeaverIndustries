@@ -71,6 +71,7 @@ if (count($obj) > 0)
         $count++;
 
         if ($count%4 ==0)echo "</tr>";
+
     }
 
     echo "</table>";

@@ -12,6 +12,9 @@ include ("shared/navmenu.php");
 <?php
 $rba = new RecoveryQBA();
 $RecQuestions = $rba->GetRecQuestions();
+$uba =new UserBA();
+$allEmails = $uba->GetEmails();
+
 
 $recQID = empty($_POST['RecQuestionsID']) ? "What primary school did you attend?" : $_POST['RecQuestionsID'];
 
@@ -47,11 +50,9 @@ if(isset($_POST['userLogin'])) {
             "country" => $country, "poBox" => $poBox, "postalCode" => $postalCode,
             "RecQuestion1" => $RecQuestion1, "Answer1" => $Answer1,
             "RecQuestion2" => $RecQuestion2, "Answer2" => $Answer2);
-        $regInfo = new WorkFunctions($registration);
+
+        $regInfo = new WorkFunctions($registration,$allEmails);
         $verify = $regInfo->Testinput();
-
-
-
 
         if (!$verify) {
 
@@ -73,18 +74,18 @@ if(isset($_POST['userLogin'])) {
             // Please specify the return address to use
             ini_set('sendmail_from', 'register@beaverindustries.co.ke');
             // the message
-            $msg = $firstName." Thank you for opening an account on Beaver Industries \r
+            $msg = $firstName."\r Thank you for opening an account on Beaver Industries \r
                             Please take note of your account information which you will need to access \r
                             Beaver online in future. UserName:".$userLogin." If you would like to modify your \r
                             account, please visit beaverindustries.co.ke/account. ";
             // use wordwrap() if lines are longer than 70 characters
-            $msg = wordwrap($msg,70);
+            //$msg = wordwrap($msg,70);
             $headers = "From:beaver@beaverindustries.co.ke" . "\r" .
                 "CC: beaver@beaverindustries.co.ke";
             // send email
-            mail($email,"Welcome to Beaver Online",
-                "Dear ".$msg, "From:register@beaverindustries.co.ke" . "\r" .
-                "CC: register@beaverindustries.co.ke");
+//            mail($email,"Welcome to Beaver Online",
+//                "Dear ".$msg, "From:register@beaverindustries.co.ke". "\r\n".
+//                "C: register@beaverindustries.co.ke");
 
 
             echo "<p style=\"text-align:center\">Thank you, Registration is Complete"; ?><br>
@@ -93,14 +94,14 @@ if(isset($_POST['userLogin'])) {
             foreach ($verify as $value) {
                 echo $value . "<br>";
             }
-
+            //include("testmail.php");
             include("shared/registration.php");
         }
 
 
     } else {
         echo "<p style=\"text-align:center\">Passwords did not match</p>";
-
+        //include("testmail.php");
         include("shared/registration.php");
     }
     unset($_POST);
@@ -121,6 +122,9 @@ if(isset($_POST['userLogin'])) {
 
 
 </div>
-<?php
 
+
+
+<?php
 include("shared/footer.php");
+?>

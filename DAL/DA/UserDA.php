@@ -98,4 +98,7 @@ class UserDA extends BaseDA
         $this->db->UpdateData("UR_Address",$bindParms,"UserID = ?",$bindParmsWhere);
 
     }
+    public function GetEmails(){
+        return $this->db->GetArrayList("select EmailAddress from UR_User ",[]);
+    }
 }

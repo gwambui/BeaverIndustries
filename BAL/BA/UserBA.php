@@ -61,5 +61,14 @@
          $this->uda->UpdateAddress($address);
      }
 
+     public function GetEmails(){
+         try{
+             return $this->uda->GetEmails();
+         }
+
+        catch (PDOException $pex) {
+            throw new PDOException($pex);
+        }
+     }
 
  }

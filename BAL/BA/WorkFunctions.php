@@ -13,9 +13,10 @@ class WorkFunctions
     public $Errlog = array();
 
 
-    public function __construct($input)
+    public function __construct($input,$emails)
     {
         $this->arr = $input;
+        $this->allemails = $emails;
     }
 
     public function IsEmpty($item, $value)
@@ -32,27 +33,35 @@ class WorkFunctions
     }
     public function TestInput()
     {
-        //var_dump($this->arr);
+//        var_dump($this->arr);
         foreach ( $this->arr as $item=>$value){
 
 
             if($item == 'email'){
                 if (!filter_var($value, FILTER_VALIDATE_EMAIL)) {
                     array_push($this->Errlog, "Invalid email format") ;
+                }
+                foreach ($this->allemails as $em => $ad) {
 
+                    //var_dump($em);
+//                    var_dump($ad['EmailAddress']);
+//                    var_dump($value);
+                    if ($value == $ad['EmailAddress']) {
+                        array_push($this->Errlog, $item .' '. $value . " already in use");
+                    }
                 }
             }
             else if($item =='birthdate') {
                 if(empty($item)){
                     array_push($this->Errlog,$item." cannot be void" ) ;
-
                 }
             }
             else{
-                $this->IsEmpty($item, $value);}
+                $this->IsEmpty($item, $value);
+            }
 
         }
-        /*var_dump($this->Errlog);*/
+//        var_dump($this->Errlog);
         if(sizeof($this->Errlog)>0){
             return $this->Errlog;
         }else{return $this->verified;}
