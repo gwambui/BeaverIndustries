@@ -52,65 +52,46 @@ if(isset($_POST['RemoveItem']))
 
         <div id = "contact">
             <?php
-            if (isset($_SESSION['user']))
-            {
+                if (isset($_SESSION['user']))
+                {
 
-                echo "<a> Hi ".$_SESSION['user']['FirstName']."! &nbsp;</a>";
-                echo "<a href=\"logout.php\">Sign Out |&nbsp;</a>";
-                echo "<a href=\"account.php\">My Account |&nbsp;</a>";
-            }
-            else{
-                echo "<a href=\"login.php\">Sign In&nbsp;|&nbsp;</a>";
-                echo "<a href=\"login.php\">My Account |&nbsp;</a>";
-            }
+                    echo "<a> Hi ".$_SESSION['user']['FirstName']."! &nbsp;</a>";
+                    echo "<a href=\"logout.php\">Sign Out |&nbsp;</a>";
+                    echo "<a href=\"account.php\">My Account |&nbsp;</a>";
+                }
+                else{
+                    echo "<a href=\"login.php\">Sign In&nbsp;|&nbsp;</a>";
+                    echo "<a href=\"login.php\">My Account |&nbsp;</a>";
+                }
 
             ?>
 
 
 
-            <a href="../cart.php"><span class="cart glyphicon glyphicon-shopping-cart"></span>&nbsp;|&nbsp;</a><a href="../contact.php">Contact Us</a></div>
-        <div class="cartpreview"> <?php include 'shared/carttable.php' ?></div>
+            <a href="cart.php"><span class="cart glyphicon glyphicon-shopping-cart"></span>&nbsp;|&nbsp;</a><a href="contact.php">Contact Us</a></div>
+        <div class="cartpreview"> <?php include 'shared/carttable.php'?></div>
 
 
         <div class="col-5">
 
             <!-- Logo --><div><img src="assets/Images/beaver-logo.svg" width = "80px" height = "80 px" alt="BI logo" /> </div>
             <h1><a href="index.php">Beaver Industries</a></h1>
-            <div class="hamburger" onclick="hamburger(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
         </div>
 
-        <nav class = "col-7">
+            <nav class = "col-7">
 
-            <a id = "navLivingroom" name = "#navLivingroom"  href="livingroom.php">Livingroom</a>
-            <a id = "navDining" name = '#navDining' href="dining.php">Dining</a>
-            <a id = "navBedroom" name ="#navBedroom"  href="bedroom.php">Bedroom</a>
-            <a id = "navBaby" name ='#navBaby'   href="baby.php">Baby</a>
-            <a id = "navKids" name = '#navKids'  href="kids.php">Kids</a>
-            <a id = "navOutdoor" name ="#navOutdoor"   href="outdoor.php">Outdoor</a>
-            <a id = "navHome" name = "#navHome"   href="home.php">Home</a>
+                <a id = "navLivingroom" name = "#navLivingroom"  href="livingroom.php">Livingroom</a>
+                <a id = "navDining" name = '#navDining' href="dining.php">Dining</a>
+                <a id = "navBedroom" name ="#navBedroom"  href="bedroom.php">Bedroom</a>
+                <a id = "navBaby" name ='#navBaby'   href="baby.php">Baby</a>
+                <a id = "navKids" name = '#navKids'  href="kids.php">Kids</a>
+                <a id = "navOutdoor" name ="#navOutdoor"   href="outdoor.php">Outdoor</a>
+                <a id = "navHome" name = "#navHome"   href="home.php">Home</a>
 
 
-        </nav>
-
+            </nav>
     </header>
     <div  id = "hoverbox" class ="dropdown-content"> </div>
-    <!-- Top Navigation Menu -->
-    <div class="topnav" >
 
-        <div id="myLinks">
-
-            <a name = "#navLivingroom"  href="livingroom.php">Livingroom</a>
-            <a name = '#navDining' href="dining.php">Dining</a>
-            <a name ="#navBedroom"  href="bedroom.php">Bedroom</a>
-            <a name ='#navBaby'   href="baby.php">Baby</a>
-            <a name = '#navKids'  href="kids.php">Kids</a>
-            <a name ="#navOutdoor"   href="outdoor.php">Outdoor</a>
-            <a name = "#navHome"   href="home.php">Home</a>
-        </div>
-    </div>
 
 </div>
